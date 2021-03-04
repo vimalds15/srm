@@ -12,20 +12,26 @@ const Admissions = () => {
                     <AdmissionCont>
                         <Title>Admissions</Title>
                         <Wrapper>
-                        <Cont>
-                            <img src={india} alt='india' />
-                            <p></p>
+                            <Cont>
+                                <CardCont>
+                                    <img src={india} alt='india' />
+                                    <p></p>
+                                </CardCont>
+                                
                         </Cont>
                         <Cont>
+                            <CardCont>
                             <img src={international} alt='international' />
-                            <p></p>
-                            </Cont>
+                                    <p></p>
+                            </CardCont>
+                        </Cont>
+                            
                         </Wrapper>
                     </AdmissionCont>
                 </Col>
                 <Col lg={3}>
                 <EnquiryCont>
-                        <EnqTitle>Submit a Enquiry</EnqTitle>
+                        <EnqTitle>Submit an Enquiry</EnqTitle>
                         <FormWrapper>
                             <Form>
                                 <InputCont>
@@ -68,6 +74,7 @@ const Title = styled.p`
     margin-top:10px;
     padding:2%;
     
+    
 `
 const Wrapper = styled.div`
     @media(min-width:900px){
@@ -94,7 +101,11 @@ img{
     -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
     -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
     box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
+
 }
+
+
+
 @media(min-width:900px){
     display:flex;
     align-items:center;
@@ -117,9 +128,17 @@ img{
 
 `
 
+const CardCont = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:center;
+`
+
 const EnquiryCont = styled.div`
     background:black;
     color:white;
+    height:100%;
+    margin-top:40px;
     padding-top:20px;
     padding-bottom:40px;
     transition: all 0.9s;
@@ -130,7 +149,7 @@ const EnquiryCont = styled.div`
         font-size:18px;
         border-radius:10px;
         padding:15px;
-        border: 2px solid:
+        
     }
 
     input:hover{
@@ -140,6 +159,12 @@ const EnquiryCont = styled.div`
     input:focus{
         outline-style:none;
         border:4px solid rgb(250, 225, 0);
+    }
+
+    @media(min-width:990px){
+        margin-top:0px;
+        
+        
     }
 `
 
