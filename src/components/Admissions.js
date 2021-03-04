@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Card } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import styled from 'styled-components'
 import india from '../images/admissions/india.jpg'
 import international from '../images/admissions/international.jpg'
@@ -11,17 +11,37 @@ const Admissions = () => {
                 <Col lg={true}>
                     <AdmissionCont>
                         <Title>Admissions</Title>
+                        <Wrapper>
                         <Cont>
-                            <img src={india} />
-                            <p></p>
-                            <img src={international} />
+                            <img src={india} alt='india' />
                             <p></p>
                         </Cont>
-                    </AdmissionCont>    
+                        <Cont>
+                            <img src={international} alt='international' />
+                            <p></p>
+                            </Cont>
+                        </Wrapper>
+                    </AdmissionCont>
                 </Col>
                 <Col lg={3}>
                 <EnquiryCont>
-                        <Title>Submit a Enquiry</Title>
+                        <EnqTitle>Submit a Enquiry</EnqTitle>
+                        <FormWrapper>
+                            <Form>
+                                <InputCont>
+                                <span><i className='fas fa-user'></i></span><span><input type='text' placeholder='Enter Your Name'></input></span>
+                                </InputCont>
+                                <InputCont>
+                                <span><i className='fa fa-phone'></i></span><span><input type='text' placeholder='Enter Your Mobile Number'></input></span>
+                                </InputCont>
+                                <InputCont>
+                                <span><i className='fa fa-envelope'></i></span><span><input type='email' placeholder='Enter Your Email Address'></input></span>
+                                </InputCont>
+                                <InputCont>
+                                <span><i className='fas fa-user'></i></span><span><input type='text' placeholder='Not Implemented'></input></span>
+                                </InputCont>
+                            </Form>
+                            </FormWrapper>
                 </EnquiryCont>   
                 </Col>
             </Row> 
@@ -42,18 +62,26 @@ const AdmissionCont = styled.div`
 `
 
 const Title = styled.p`
-    font-size:28px;
+    font-size:34px;
     font-weight:bold;
     text-align:center;
+    margin-top:10px;
+    padding:2%;
     
 `
+const Wrapper = styled.div`
+    @media(min-width:900px){
+    display:flex;
+    }
+`
+
 
 const Cont = styled.div`
-@media(max-width:500px){
+{
 display:flex;
 flex-wrap:wrap;
 align-items:center;
-ustify-content:center;
+justify-content:center;
 
    
 img{
@@ -62,17 +90,92 @@ img{
     object-fit:cover;
     height:300px;
     width:70%;
-    margin-left:20px;
-    -webkit-box-shadow: 0px 43px 73px -18px rgba(0,0,0,0.59);
-    -moz-box-shadow: 0px 43px 73px -18px rgba(0,0,0,0.59);
-    box-shadow: 0px 43px 73px -18px rgba(0,0,0,0.59);
+    margin-bottom:20px;
+    -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
+    box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
+}
+@media(min-width:900px){
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+   
+img{
+    display:block;
+    border-radius:30px;
+    object-fit:cover;
+    height:300px;
+    margin-bottom:20px;
+    -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
+    box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
+}
+
 }
 }
-@media(min-width:10){
-    display:none;
-}
+
 `
 
 const EnquiryCont = styled.div`
-    background:green
+    background:black;
+    color:white;
+    padding-top:20px;
+    padding-bottom:40px;
+    transition: all 0.9s;
+
+    input{
+        width:100%;
+        height:50px;
+        font-size:18px;
+        border-radius:10px;
+        padding:15px;
+        border: 2px solid:
+    }
+
+    input:hover{
+        border:3px solid rgb(250, 225, 0);
+    }
+
+    input:focus{
+        outline-style:none;
+        border:4px solid rgb(250, 225, 0);
+    }
+`
+
+const EnqTitle = styled.div`
+    font-size:34px;
+    font-weight:bold;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:2%;
+    color:rgb(250, 225, 0);
+`
+
+const FormWrapper = styled.div`
+display:block;
+width:80%;
+margin:0 auto;
+color:white;
+background:black;
+`
+
+const Form = styled.form`
+    
+`
+
+const InputCont = styled.div`
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:15px;
+
+span{
+    margin-right:10px;
+}
+
+i{
+    color: rgb(250, 225, 0);
+}
 `

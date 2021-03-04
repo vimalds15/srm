@@ -49,6 +49,9 @@ const MasterCont = styled.div`
 
 
 const Container = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:center;
     border-radius:30px;
     overflow:hidden;
     -webkit-box-shadow: -1px 13px 31px 9px rgba(0,0,0,0.75);
@@ -56,4 +59,23 @@ const Container = styled.div`
     box-shadow: -1px 13px 31px 9px rgba(0,0,0,0.75);
     transition:all 0.5s ease ;
     }
+
+    @media(min-width:1200px){
+        
+        margin:0 auto;
+        border-radius:30px;
+        overflow:hidden;
+        width:70%;
+        -webkit-box-shadow: -1px 13px 31px 9px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 13px 31px 9px rgba(0,0,0,0.75);
+        box-shadow: -1px 13px 31px 9px rgba(0,0,0,0.75);
+        transition:all 0.5s ease ;
+    }
+    }
 `
+
+
+
+
+
+
