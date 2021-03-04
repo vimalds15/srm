@@ -9,6 +9,7 @@ import c4 from '../images/carousel/c4.jpg'
 
 const Caroussel = () => {
     return (
+        <MasterCont>
         <Container>
             <Carousel  pause='false'>
                 <Carousel.Item interval={4000}>
@@ -34,18 +35,25 @@ const Caroussel = () => {
                     />
                 </Carousel.Item>
             </Carousel>
-        </Container>
+            </Container>
+            </MasterCont>
     )
 }
 
 export default Caroussel
 
+const MasterCont = styled.div`
+    background:rgb(212, 210, 210);
+    padding:50px;
+`
+
 
 const Container = styled.div`
-    margin:5%;
     border-radius:30px;
     overflow:hidden;
-    -webkit-box-shadow: 0px 17px 31px 9px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 17px 31px 9px rgba(0,0,0,0.75);
-box-shadow: 0px 17px 31px 9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 13px 31px 9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 13px 31px 9px rgba(0,0,0,0.75);
+    box-shadow: -1px 13px 31px 9px rgba(0,0,0,0.75);
+    transition:all 0.5s ease ;
+    }
 `
