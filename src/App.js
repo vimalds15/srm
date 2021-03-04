@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <HomeScreen />
-    <h2>Welcome</h2>
+    <h2>Hello</h2>
     </div>
   );
 }
