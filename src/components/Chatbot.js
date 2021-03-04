@@ -6,12 +6,10 @@ const Chatbot = () => {
     return (
         <div>
             <Container >
-                <a href="http://kanishkkunal.com"
-                    target="popup"
-                    onClick={window.open('https://console.dialogflow.com/api-client/demo/embedded/3a87f0cd-e239-4c94-8edb-f2cfd591e3a8', 'popup', 'width=600,height=600')} >
-                    
+            <a href="https://console.dialogflow.com/api-client/demo/embedded/3a87f0cd-e239-4c94-8edb-f2cfd591e3a8" 
+                    target="popup" >
                     <i className='fas fa-comment-alt'></i>
-                </a>
+</a>
    
         </Container>
         </div>

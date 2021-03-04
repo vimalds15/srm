@@ -1,28 +1,34 @@
 import React from 'react'
 import logo from '../images/logo.png'
-import styled from 'styled-components'
-
+import { Navbar,Nav,NavDropdown } from 'react-bootstrap'
 const Header = () => {
   return (
-    <div className="total">
-      <div className='left_cont'>
-        <img className='logo' src={logo}
-        />
-      </div>
-      <div className='right_cont'>
-    
-        <li><a className='active' href="#"><i class="fas fa-server"></i> About</a></li>
-        <li><a href="#"><i class="fas fa-graduation-cap"></i> Admissions</a></li>
-        <li><a href="#"><i class="fas fa-building"></i> Departments</a></li>
-        <li><a href="#"><i class="fas fa-volume-up"></i> Announcements</a></li>
-        <li><a href="#"><i class="far fa-calendar-alt"></i> Events</a></li>
-        <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
-        <li><a href="#"><i class="fas fa-cogs"></i> Career</a></li>
-        <li><a href="#"><i class="fas fa-university"></i> Campus Life</a></li>
-        <li><a href="#"><i class="fas fa-medal"></i> Achievements</a></li>
-        
-        </div>
-        </div>
+    <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#home"><img className='logo' src={logo} alt="SRM" /></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav" className="mt-10">
+        <div className='rightHead'>
+          <Nav className="mr-auto ">
+            <Nav.Link href="#home"><i className="fas fa-server"></i> About Us</Nav.Link>
+          <Nav.Link href="#link"><i className="fas fa-volume-up"></i> Announcements</Nav.Link>
+          <Nav.Link href="#link"><i className="fas fa-headphones"></i> Support</Nav.Link>
+            <NavDropdown title="Quick Links" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1"><i className="fas fa-graduation-cap"></i> Admissions</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2"><i className="fas fa-building"></i> Departments</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3"><i className="far fa-calendar-alt"></i> Events</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1"><i className="fas fa-chalkboard-teacher"></i> Faculty</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2"><i className="fas fa-cogs"></i> Career</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.3"><i className="fas fa-university"></i> Campus Life</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.1"><i className="fas fa-medal"></i> Achievements</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <div className='lgn'>
+                <NavDropdown.Item  href="#action/3.4">Login/Sign Up</NavDropdown.Item>
+                </div>
+            </NavDropdown>
+          </Nav>
+          </div>
+        </Navbar.Collapse>
+    </Navbar>
     )
 }
 
