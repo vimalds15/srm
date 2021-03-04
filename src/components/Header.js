@@ -14,7 +14,7 @@ const Header = () => {
     
         <li><a className='active' href="#"><i class="fas fa-server"></i> About</a></li>
         <li><a href="#"><i class="fas fa-graduation-cap"></i> Admissions</a></li>
-        <li><a href="#">Departments</a></li>
+        <li><a href="#"><i class="fas fa-building"></i> Departments</a></li>
         <li><a href="#">Announcements</a></li>
         <li><a href="#">Events</a></li>
         <li><a href="#">Faculty</a></li>
