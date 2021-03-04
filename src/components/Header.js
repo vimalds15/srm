@@ -20,7 +20,7 @@ const Header = () => {
         <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
         <li><a href="#"><i class="fas fa-cogs"></i> Career</a></li>
         <li><a href="#"><i class="fas fa-university"></i> Campus Life</a></li>
-        <li><a href="#">Achievements</a></li>
+        <li><a href="#"><i class="fas fa-medal"></i> Achievements</a></li>
         
         </div>
         </div>
