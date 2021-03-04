@@ -22,7 +22,8 @@ const Header = () => {
       </Nav>
       <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-success">Search</Button>
+        <Button variant="outline-success">Search  <i class="fa fa-search" aria-hidden="true"></i>
+ </Button>
       </Form>
     </Navbar.Collapse>
   </Navbar>
