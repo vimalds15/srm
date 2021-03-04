@@ -12,7 +12,7 @@ const Header = () => {
 
       <div className='right_cont'>
     
-        <li><a className='active' href="#">About</a></li>
+        <li><a className='active' href="#"><i class="fas fa-server"></i> About</a></li>
         <li><a href="#">Admissions</a></li>
         <li><a href="#">Departments</a></li>
         <li><a href="#">Announcements</a></li>
