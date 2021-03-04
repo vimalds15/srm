@@ -9,18 +9,18 @@ const Header = () => {
         <img className='logo' src={logo}
         />
       </div>
-
+SRM INSTITUTE OF SCIENCE & TECHONOLOGY
       <div className='right_cont'>
     
-        <li><a className='active' href="#">About</a></li>
-        <li><a href="#">Admissions</a></li>
-        <li><a href="#">Departments</a></li>
-        <li><a href="#">Announcements</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Faculty</a></li>
-        <li><a href="#">Career</a></li>
-        <li><a href="#">Campus Life</a></li>
-        <li><a href="#">Achievements</a></li>
+        <li><a className='active' href="#"><i class="fas fa-server"></i> About</a></li>
+        <li><a href="#"><i class="fas fa-graduation-cap"></i> Admissions</a></li>
+        <li><a href="#"><i class="fas fa-building"></i> Departments</a></li>
+        <li><a href="#"><i class="fas fa-volume-up"></i> Announcements</a></li>
+        <li><a href="#"><i class="far fa-calendar-alt"></i> Events</a></li>
+        <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
+        <li><a href="#"><i class="fas fa-cogs"></i> Career</a></li>
+        <li><a href="#"><i class="fas fa-university"></i> Campus Life</a></li>
+        <li><a href="#"><i class="fas fa-medal"></i> Achievements</a></li>
         
         </div>
         </div>
