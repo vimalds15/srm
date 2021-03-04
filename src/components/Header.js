@@ -9,7 +9,7 @@ const Header = () => {
         <img className='logo' src={logo}
         />
       </div>
-
+SRM INSTITUTE OF SCIENCE & TECHONOLOGY
       <div className='right_cont'>
     
         <li><a className='active' href="#"><i class="fas fa-server"></i> About</a></li>
