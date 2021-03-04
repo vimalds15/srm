@@ -18,7 +18,7 @@ const Header = () => {
         <li><a href="#"><i class="fas fa-volume-up"></i> Announcements</a></li>
         <li><a href="#"><i class="far fa-calendar-alt"></i> Events</a></li>
         <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Faculty</a></li>
-        <li><a href="#">Career</a></li>
+        <li><a href="#"><i class="fas fa-cogs"></i> Career</a></li>
         <li><a href="#">Campus Life</a></li>
         <li><a href="#">Achievements</a></li>
         
