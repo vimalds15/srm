@@ -15,7 +15,7 @@ const Admissions = () => {
                             <Cont>
                                 <CardCont>
                                     <img src={india} alt='india' />
-                                    <p></p>
+                                    <p>Welcome to India</p>
                                 </CardCont>
                                 
                         </Cont>
@@ -121,6 +121,7 @@ img{
     -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
     -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
     box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
+    position:relative;
 }
 
 }
@@ -132,6 +133,16 @@ const CardCont = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
+
+    img{
+        position:relative;
+    }
+
+    p {
+        position:absolute;
+        background:red;
+        ;
+    }
 `
 
 const EnquiryCont = styled.div`
