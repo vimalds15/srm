@@ -96,35 +96,11 @@ const Admissions = () => {
                                 
                         }}>
                         <p>
-                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                            ipsam atque a dolores quisquam quisquam adipisci possimus
-                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                            deleniti rem!
-                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                            ipsam atque a dolores quisquam quisquam adipisci possimus
-                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                            deleniti rem!
-                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                            ipsam atque a dolores quisquam quisquam adipisci possimus
-                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                            deleniti rem!
-                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                            ipsam atque a dolores quisquam quisquam adipisci possimus
-                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                            deleniti rem!
+                        Follow these Steps to be part of SRM Institute of Sciene & Technology
                         </p>
+                    <ul>
+                        For Engineering Admissions you must meet the following requirements
+                        </ul>
                     </Modal.Body>
                 </Modal>
             }
@@ -266,7 +242,7 @@ const CardCont = styled.div`
     box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
     position:relative;
     cursor:pointer;
-    tranisition: all 0.9s;
+   
 
     img{
         height:100%;
@@ -317,12 +293,13 @@ const CardCont = styled.div`
             visibility:visible;
             opacity:1;
         }
-        img{
-            opacity:0.3;
-        }
         p{
             visibility:hidden;
         }
+        img{
+            opacity:0.3;
+        }
+       
         tranisition: all 0.9s;
     }
 
