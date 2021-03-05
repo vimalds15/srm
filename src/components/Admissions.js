@@ -133,7 +133,7 @@ const CardCont = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-
+    
     img{
         position:relative;
     }
@@ -141,7 +141,9 @@ const CardCont = styled.div`
     p {
         position:absolute;
         background:red;
-        ;
+        margin-top:50%;
+        width:100%;
+        
     }
 `
 
