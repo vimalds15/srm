@@ -10,10 +10,12 @@ const HomeScreen = () => {
         <Header />
             <Carousel />
             <Admissions />
-            <Chatbot /> 
+
+            <Chatbot />
+
+    
      </div>
     )
 }
 
 export default HomeScreen
-

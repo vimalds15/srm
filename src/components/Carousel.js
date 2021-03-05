@@ -11,15 +11,15 @@ const Caroussel = () => {
     return (
         <MasterCont>
         <Container>
-            <Carousel  pause='false'>
-                <Carousel.Item interval={4000}>
+            <Carousel  pause='hover'>
+                <Carousel.Item interval={3200}>
                     <img
                     className="d-block w-100"
                     src={c1}
                     alt="First slide"
                     />
                 </Carousel.Item>
-                <Carousel.Item interval={4000}>
+                <Carousel.Item interval={3200}>
                     <img
                     className="d-block w-100"
                     src={c2}
@@ -27,7 +27,7 @@ const Caroussel = () => {
                     />
                     
                 </Carousel.Item>
-                <Carousel.Item interval={4000}>
+                <Carousel.Item interval={3200}>
                     <img
                     className="d-block w-100"
                     src={c4}

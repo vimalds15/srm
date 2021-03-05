@@ -185,7 +185,6 @@ const CardCont = styled.div`
   
 `
 
-
 const EnquiryCont = styled.div`
     background:black;
     color:white;
