@@ -63,7 +63,7 @@ const Admissions = () => {
 export default Admissions
 
 const Container = styled.div`
-   background:#111;
+   background:#fafafa;
     
 `
 
