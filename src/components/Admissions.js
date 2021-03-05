@@ -18,7 +18,8 @@ const Admissions = () => {
                             <Cont>
                                 <CardCont>
                                         <img src={india} alt='india' />
-                                        <p>Admission for Indian Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
+                                    <p>Admission for Indian Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
+                                  <h3>Know More <span><i className='fas fa-arrow-circle-right'></i></span></h3>  
                                 </CardCont>
                                 
                         </Cont>
@@ -26,6 +27,7 @@ const Admissions = () => {
                             <CardCont>
                             <img src={international} alt='international' />
                                     <p>Admission for International Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
+                                    <h3>Know More <span><i className='fas fa-arrow-circle-right'></i></span></h3>
                             </CardCont>
                         </Cont>
                             
@@ -65,9 +67,17 @@ const Container = styled.div`
     
 `
 
+
 const AdmissionCont = styled.div`
    
    
+`
+const Wrapper = styled.div`
+    display:flex;
+    margin-top:20px;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
 `
 
 const Title = styled.p`
@@ -76,61 +86,8 @@ const Title = styled.p`
     text-align:center;
     margin-top:10px;
     padding:2%;
-    
-    
+    text-transform:uppercase;
 `
-const Wrapper = styled.div`
-    @media(min-width:900px){
-    display:flex;
-    }
-`
-
-
-// const Conts = styled.div`
-// {
-// display:flex;
-// flex-wrap:wrap;
-// align-items:center;
-// justify-content:center;
-
-   
-// img{
-//     display:flex;
-//     border-radius:30px;
-//     object-fit:cover;
-//     height:300px;
-//     width:70%;
-//     margin-bottom:20px;
-//     -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
-//     -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
-//     box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
-
-// }
-
-
-
-// @media(min-width:900px){
-//     display:flex;
-//     align-items:center;
-//     justify-content:center;
-
-   
-// img{
-//     display:block;
-//     border-radius:30px;
-//     object-fit:cover;
-//     height:300px;
-//     margin-bottom:20px;
-//     -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
-//     -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
-//     box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
-//     position:relative;
-// }
-
-// }
-// }
-
-// `
 
 const CardCont = styled.div`
 
@@ -139,13 +96,14 @@ const CardCont = styled.div`
     border-radius:30px;
     height:300px;
     width:70%;
-    background:red;
     overflow:hidden;
     margin-bottom:20px;
     -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
     -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
     box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
     position:relative;
+    cursor:pointer;
+    tranisition: all 0.9s;
 
     img{
         height:100%;
@@ -169,16 +127,46 @@ const CardCont = styled.div`
         width:100%;
        
     }
+    h3{
+        display:flex;
+        font-size:18px;
+        align-items:center;
+        justify-content:center;
+        border-radius:20px;
+        position:absolute;
+        text-align:center;
+        font-weight:bold;
+        top:45%;
+        left:10%;
+        height:45px;
+        color: rgb(250, 225, 0);
+        background:black;
+        width:80%;
+        visibility:hidden;
+    }
 
     span{
         padding-left:5px;
+    }
+
+    :hover{
+        h3{
+            visibility:visible;
+            opacity:1;
+        }
+        img{
+            opacity:0.3;
+        }
+        p{
+            visibility:hidden;
+        }
+        tranisition: all 0.9s;
     }
 
     @media(min-width:900px){
         display:block;
         border-radius:30px;
         height:300px;
-        background:red;
         margin-bottom:20px;
         -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
         -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
@@ -196,6 +184,7 @@ const CardCont = styled.div`
     
   
 `
+
 
 const EnquiryCont = styled.div`
     background:black;
