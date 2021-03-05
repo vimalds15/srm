@@ -1,11 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
+import Modal from '../modals/Modal'
 import { Row, Col } from 'react-bootstrap'
 import styled from 'styled-components'
 import india from '../images/admissions/india.jpg'
 import international from '../images/admissions/international.jpg'
 
 const Admissions = () => {
-
+    const [isOpen, setIsOpen] = useState(false);
 
 
     return (
@@ -16,7 +17,7 @@ const Admissions = () => {
                         <Title>Admissions</Title>
                         <Wrapper>
                             <Cont>
-                                <CardCont>
+                                <CardCont onClick={()=>setIsOpen(true)}>
                                         <img src={india} alt='india' />
                                     <p>Admission for Indian Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
                                   <h3>Know More <span><i className='fas fa-arrow-circle-right'></i></span></h3>  
@@ -29,12 +30,11 @@ const Admissions = () => {
                                     <p>Admission for International Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
                                     <h3>Know More <span><i className='fas fa-arrow-circle-right'></i></span></h3>
                             </CardCont>
-                        </Cont>
-                            
+                        </Cont>          
                         </Wrapper>
                     </AdmissionCont>
                 </Col>
-                <Col lg={3}>
+                <Col >
                 <EnquiryCont>
                         <EnqTitle>Submit an Enquiry</EnqTitle>
                         <FormWrapper>
@@ -55,7 +55,11 @@ const Admissions = () => {
                             </FormWrapper>
                 </EnquiryCont>   
                 </Col>
-            </Row> 
+            </Row>
+            
+            
+               
+            
         </Container>
     )
 }
@@ -64,7 +68,7 @@ export default Admissions
 
 const Container = styled.div`
    background:#fafafa;
-    
+   overflow: hidden;
 `
 
 
@@ -187,6 +191,7 @@ const CardCont = styled.div`
 
 
 const EnquiryCont = styled.div`
+    overflow: hidden;
     background:black;
     color:white;
     height:100%;
@@ -214,7 +219,7 @@ const EnquiryCont = styled.div`
     }
 
     @media(min-width:990px){
-        margin-top:0px;
+        margin:0px;
         
         
     }
@@ -228,6 +233,7 @@ const EnqTitle = styled.div`
     margin-bottom:10px;
     padding:2%;
     color:rgb(250, 225, 0);
+    overflow: hidden;
 `
 
 const FormWrapper = styled.div`
