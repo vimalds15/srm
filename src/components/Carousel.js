@@ -11,7 +11,7 @@ const Caroussel = () => {
     return (
         <MasterCont>
         <Container>
-            <Carousel  pause='false'>
+            <Carousel  pause='hover'>
                 <Carousel.Item interval={3200}>
                     <img
                     className="d-block w-100"
