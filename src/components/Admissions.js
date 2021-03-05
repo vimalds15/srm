@@ -5,6 +5,9 @@ import india from '../images/admissions/india.jpg'
 import international from '../images/admissions/international.jpg'
 
 const Admissions = () => {
+
+
+
     return (
         <Container id='admissions'>
              <Row sm={true} md={true} lg={true}>
@@ -14,15 +17,15 @@ const Admissions = () => {
                         <Wrapper>
                             <Cont>
                                 <CardCont>
-                                    <img src={india} alt='india' />
-                                    <p>Welcome to India</p>
+                                        <img src={india} alt='india' />
+                                        <p>Admission for Indian Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
                                 </CardCont>
                                 
                         </Cont>
                         <Cont>
                             <CardCont>
                             <img src={international} alt='international' />
-                                    <p></p>
+                                    <p>Admission for International Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
                             </CardCont>
                         </Cont>
                             
@@ -83,68 +86,115 @@ const Wrapper = styled.div`
 `
 
 
-const Cont = styled.div`
-{
-display:flex;
-flex-wrap:wrap;
-align-items:center;
-justify-content:center;
+// const Conts = styled.div`
+// {
+// display:flex;
+// flex-wrap:wrap;
+// align-items:center;
+// justify-content:center;
 
    
-img{
+// img{
+//     display:flex;
+//     border-radius:30px;
+//     object-fit:cover;
+//     height:300px;
+//     width:70%;
+//     margin-bottom:20px;
+//     -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
+//     -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
+//     box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
+
+// }
+
+
+
+// @media(min-width:900px){
+//     display:flex;
+//     align-items:center;
+//     justify-content:center;
+
+   
+// img{
+//     display:block;
+//     border-radius:30px;
+//     object-fit:cover;
+//     height:300px;
+//     margin-bottom:20px;
+//     -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
+//     -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
+//     box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
+//     position:relative;
+// }
+
+// }
+// }
+
+// `
+
+const CardCont = styled.div`
+
     display:flex;
+    flex-wrap:wrap;
     border-radius:30px;
-    object-fit:cover;
     height:300px;
     width:70%;
-    margin-bottom:20px;
-    -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
-    -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
-    box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
-
-}
-
-
-
-@media(min-width:900px){
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-   
-img{
-    display:block;
-    border-radius:30px;
-    object-fit:cover;
-    height:300px;
+    background:red;
+    overflow:hidden;
     margin-bottom:20px;
     -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
     -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
     box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
     position:relative;
-}
 
-}
-}
-
-`
-
-const CardCont = styled.div`
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    
     img{
-        position:relative;
+        height:100%;
+        width:100%;
+        object-fit:cover;
+        border-radius:30px;
+       
     }
 
-    p {
+    p{
+        display:flex;
+        align-items:center;
+        justify-content:center;
         position:absolute;
-        background:red;
-        margin-top:50%;
+        text-align:center;
+        font-weight:bold;
+        bottom:-16px;
+        height:45px;
+        color: rgb(250, 225, 0);
+        background:black;
         width:100%;
-        
+       
     }
+
+    span{
+        padding-left:5px;
+    }
+
+    @media(min-width:900px){
+        display:block;
+        border-radius:30px;
+        height:300px;
+        background:red;
+        margin-bottom:20px;
+        -webkit-box-shadow: 0px 3px 7px -18px rgba(0,0,0,0.59);
+        -moz-box-shadow: 0px 3px 73px -18px rgba(0,0,0,0.59);
+        box-shadow: 0px 13px 40px -18px rgba(0,0,0,0.59);
+        position:relative;
+
+        img{
+            height:100%;
+            width:100%;
+            object-fit:cover;
+            border-radius:30px;
+        }
+    }
+
+    
+  
 `
 
 const EnquiryCont = styled.div`
@@ -217,3 +267,12 @@ i{
     color: rgb(250, 225, 0);
 }
 `
+const Cont = styled.div`
+
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+
+`
+
