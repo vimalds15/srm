@@ -1,13 +1,12 @@
 import React,{useState} from 'react'
-import Modal from '../modals/Modal'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col,Modal } from 'react-bootstrap'
 import styled from 'styled-components'
 import india from '../images/admissions/india.jpg'
 import international from '../images/admissions/international.jpg'
 
 const Admissions = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
+    const [indianShow, setIndianShow] = useState(false);
+    const [internationalShow, setInternationalShow] = useState(false);
 
     return (
         <Container id='admissions'>
@@ -17,15 +16,15 @@ const Admissions = () => {
                         <Title>Admissions</Title>
                         <Wrapper>
                             <Cont>
-                                <CardCont onClick={()=>setIsOpen(true)}>
+                                <CardCont onClick={()=>setIndianShow(true)}>
                                         <img src={india} alt='india' />
                                     <p>Admission for Indian Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
                                   <h3>Know More <span><i className='fas fa-arrow-circle-right'></i></span></h3>  
                                 </CardCont>
                                 
                         </Cont>
-                        <Cont>
-                            <CardCont>
+                        <Cont >
+                            <CardCont onClick={() => setInternationalShow(true)} >
                             <img src={international} alt='international' />
                                     <p>Admission for International Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
                                     <h3>Know More <span><i className='fas fa-arrow-circle-right'></i></span></h3>
@@ -34,8 +33,8 @@ const Admissions = () => {
                         </Wrapper>
                     </AdmissionCont>
                 </Col>
-                <Col >
-                <EnquiryCont>
+                <Col lg={3}>
+                <EnquiryCont >
                         <EnqTitle>Submit an Enquiry</EnqTitle>
                         <FormWrapper>
                             <Form>
@@ -56,7 +55,163 @@ const Admissions = () => {
                 </EnquiryCont>   
                 </Col>
             </Row>
+                {indianShow &&
+                <Modal
+                        
+                    style={{
+                        color: "white",
+                        borderRadius: "20px",
+                    }}
+                    centered={true}
+                    animation={true}
+                    show={indianShow}
+                    onHide={() => setIndianShow(false)}
+                    className="custom modal-90w"
+                    aria-labelledby="example-custom-modal-styling-title"
+                >
+                    <Modal.Header
+                        style={{
+                            background: "black",
+                            color: "rgb(250, 225, 0)",
+                            border: "4px solid rgb(250, 225, 0)"
+                        }}
+                        closeButton>
+                        <Modal.Title
+                            style={{
+                                color: "rgb(250, 225, 0)",
+                                borderRadius: "20px",
+                                marginLeft: "auto",
+                                    
+                            }}
+                            id="example-custom-modal-styling-title">
+                            Admission For Indian Students
+                        </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body
+                        style={{
+                            color: "black",
+                            borderLeft: "4px solid rgb(250, 225, 0)",
+                            borderRight: "4px solid rgb(250, 225, 0)",
+                            borderBottom: "4px solid rgb(250, 225, 0)",
+                                
+                        }}>
+                        <p>
+                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+                            ipsam atque a dolores quisquam quisquam adipisci possimus
+                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+                            deleniti rem!
+                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+                            ipsam atque a dolores quisquam quisquam adipisci possimus
+                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+                            deleniti rem!
+                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+                            ipsam atque a dolores quisquam quisquam adipisci possimus
+                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+                            deleniti rem!
+                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+                            ipsam atque a dolores quisquam quisquam adipisci possimus
+                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+                            deleniti rem!
+                        </p>
+                    </Modal.Body>
+                </Modal>
+            }
             
+
+
+
+            
+
+            {internationalShow &&
+                <Modal
+                        
+                    style={{
+                        color: "white",
+                        borderRadius: "20px",
+                }}
+                size={"lg"}
+                    centered={true}
+                    animation={true}
+                    show={internationalShow}
+                    onHide={() => setInternationalShow(false)}
+                    className="custom modal-90w"
+                    aria-labelledby="example-custom-modal-styling-title"
+                >
+                    <Modal.Header
+                        style={{
+                            background: "black",
+                            color: "rgb(250, 225, 0)",
+                            border: "4px solid rgb(250, 225, 0)"
+                        }}
+                        closeButton>
+                        <Modal.Title
+                            style={{
+                                color: "rgb(250, 225, 0)",
+                                borderRadius: "20px",
+                                marginLeft: "auto",
+                                    
+                            }}
+                            id="example-custom-modal-styling-title">
+                            Admission For International Students
+                        </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body
+                        style={{
+                            color: "black",
+                            borderLeft: "4px solid rgb(250, 225, 0)",
+                            borderRight: "4px solid rgb(250, 225, 0)",
+                            borderBottom: "4px solid rgb(250, 225, 0)",
+                                
+                        }}>
+                        <p>
+                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+                            ipsam atque a dolores quisquam quisquam adipisci possimus
+                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+                            deleniti rem!
+                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+                            ipsam atque a dolores quisquam quisquam adipisci possimus
+                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+                            deleniti rem!
+                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+                            ipsam atque a dolores quisquam quisquam adipisci possimus
+                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+                            deleniti rem!
+                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+                            ipsam atque a dolores quisquam quisquam adipisci possimus
+                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+                            deleniti rem!
+                        </p>
+                    </Modal.Body>
+                </Modal>
+                } 
+            
+
+
+
             
                
             
@@ -79,9 +234,13 @@ const AdmissionCont = styled.div`
 const Wrapper = styled.div`
     display:flex;
     margin-top:20px;
-    flex-wrap:wrap;
+    
     align-items:center;
     justify-content:center;
+
+    @media(max-width:900px){
+        flex-wrap:wrap;
+    }
 `
 
 const Title = styled.p`
@@ -96,7 +255,7 @@ const Title = styled.p`
 const CardCont = styled.div`
 
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap:wrap;    
     border-radius:30px;
     height:300px;
     width:70%;
@@ -194,7 +353,6 @@ const EnquiryCont = styled.div`
     overflow: hidden;
     background:black;
     color:white;
-    height:100%;
     margin-top:40px;
     padding-top:20px;
     padding-bottom:40px;
@@ -219,9 +377,7 @@ const EnquiryCont = styled.div`
     }
 
     @media(min-width:990px){
-        margin:0px;
-        
-        
+        margin-top:0;
     }
 `
 
