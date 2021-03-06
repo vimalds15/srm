@@ -5,7 +5,8 @@ function App() {
 
   return (
     <div>
-    <HomeScreen />
+      {/* <HomeScreen /> */}
+      <HomeScreen />
     </div>
   );
 }

@@ -45,6 +45,7 @@ export default Caroussel
 const MasterCont = styled.div`
     background:rgb(212, 210, 210);
     padding:50px;
+   
 `
 
 

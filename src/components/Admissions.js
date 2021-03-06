@@ -204,11 +204,12 @@ export default Admissions
 const Container = styled.div`
    background:#fafafa;
    overflow: hidden;
+   
 `
 
 
 const AdmissionCont = styled.div`
-   
+padding-bottom:40px;
    
 `
 const Wrapper = styled.div`
