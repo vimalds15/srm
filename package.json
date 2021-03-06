@@ -16,12 +16,11 @@
     "react-typed": "^1.2.0",
     "styled-components": "^5.2.1",
     "typed.js": "^2.0.11",
-    "homepage": "https://immanuel44.github.io/website-srm",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
-   "predeploy": "npm run build",
-   "deploy": "gh-pages -b master -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
