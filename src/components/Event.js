@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 const Event = () => {
     return (
-        <div>
+        <div id='eventl'>
         <Title> <h1> SRM EVENTS </h1></Title>
         <Container>
             <Wrapper>
@@ -58,7 +58,7 @@ padding-top:50px;
 background:white;
 
 @media(min-width:990px){
-    height:90vh;
+    height:100vh;
     background:#111;
     border-left:4px solid rgb(255,225,0);
     border-right:4px solid rgb(255,225,0);
@@ -66,7 +66,8 @@ background:white;
 }
 
 @media(min-width:1040px){
-    height:55vh;
+    height:60vh;
+    
 }
 
 `
@@ -108,6 +109,7 @@ const Wrapper = styled.div`
     align-items:center;
     flex-wrap:wrap;
     padding:30px;
+    
 `
 
 const Card = styled.div`
@@ -116,6 +118,7 @@ const Card = styled.div`
     height:215px;
     background:#fff;
     margin:30px 10px;
+
     padding:20px 15px;
     display:flex;
     flex-direction:column;
@@ -129,6 +132,7 @@ const Card = styled.div`
 
     :hover{
         height:420px;
+        
         
         .content{
             visibility:visible;
