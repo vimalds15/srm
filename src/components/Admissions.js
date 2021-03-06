@@ -48,7 +48,7 @@ const Admissions = () => {
                                 <span><i className='fa fa-envelope'></i></span><span><input type='email' placeholder='Enter Your Email Address'></input></span>
                                 </InputCont>
                                 <InputCont>
-                                <span><i class="fas fa-save"></i></span><span><input type='button' ></input>Submit</span>
+                                    <span><i class="fas fa-save"></i></span><span><Button onClick={(e) => e.preventDefault()}>Submit</Button></span>
                                 </InputCont>
                             </Form>
                             </FormWrapper>
@@ -111,7 +111,7 @@ const Admissions = () => {
                         <p></p>
                         Also counselling will be conducted as per marks
                         <p></p>
-                        Click <a href="https://www.srmist.edu.in/admission-india/"><u>HERE</u></a> for more info:
+                        Click <a style={{"color":"rgb(255,280,0)"}} href="https://www.srmist.edu.in/admission-india/"><u>HERE</u></a> for more info:
                         <p></p><p></p>
                         <h7>*Scholrship available --Terms & Conditions apply*</h7>
                         </p>
@@ -181,9 +181,9 @@ const Admissions = () => {
                         <p></p>
                         Also counselling will be conducted as per marks . Advance Payment of 1000 USD can be done towards pre booking of seats for preferred courses, which is non-refundable.
                         <p></p>
-                        Click <a href="https://www.srmist.edu.in/admission-international/"><u>HERE</u></a> for more info:
+                        Click <a style={{"color":"rgb(255,280,0)"}} href="https://www.srmist.edu.in/admission-international/"><u>HERE</u></a> for more info:
                         <p></p><p></p>
-                        <h7>*Scholrship available --Terms & Conditions apply*</h7>
+                        <h7>*Scholarship available --Terms & Conditions apply*</h7>
                         </p>
                     </Modal.Body>
                 </Modal>
@@ -409,3 +409,22 @@ const Cont = styled.div`
 
 `
 
+const Button = styled.button`
+    height:40px;
+    width:100px;
+    border-radius:20px;
+    border:4px solid rgb(250,225,0);
+    transition: all 0.9s;
+
+    :hover{
+        background:rgb(250,225,0);
+        color:white;
+    }
+
+    :focus-within{
+        transform:translateY(-5px);
+        -webkit-box-shadow: 2px 7px 5px 2px rgba(231,166,26,1);
+-moz-box-shadow: 2px 7px 5px 2px rgba(231,166,26,1);
+box-shadow: 2px 7px 5px 2px rgba(231,166,26,1);
+    }
+`

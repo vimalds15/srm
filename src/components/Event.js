@@ -52,29 +52,51 @@ export default Event
 
 const Container = styled.div`
 display:flex;
-
-justify-content:space-evenly;
+justify-content:center;
 align-items:center
 padding-top:50px;
-background:rgb(212, 210, 210);
+background:white;
 
-@media(min-width:1200px){
-    height:70vh;
+@media(min-width:990px){
+    height:90vh;
+    background:#111;
+    border-left:4px solid rgb(255,225,0);
+    border-right:4px solid rgb(255,225,0);
+    border-bottom:4px solid rgb(255,225,0);
 }
+
+@media(min-width:1040px){
+    height:55vh;
+}
+
 `
 const Title = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
     height:8vh;
-    background:rgb(212, 210, 210);
+    
+    
     
     
     h1{
         margin-top:70px;
+        margin-bottom:50px;
         font-size:36px;
         font-weight:bold;
+       
+    }
+
+    @media(min-width:990px){
         
+        border-left:4px solid rgb(255,225,0);
+        border-right:4px solid rgb(255,225,0);
+        border-top:4px solid rgb(255,225,0);
+        background:#111;
+
+        h1{
+            color:rgb(255,225,0);
+        }
     }
 `
 
@@ -90,7 +112,7 @@ const Wrapper = styled.div`
 
 const Card = styled.div`
     position:relative;
-    max-width:300px;
+    width:300px;
     height:215px;
     background:#fff;
     margin:30px 10px;
@@ -98,8 +120,11 @@ const Card = styled.div`
     display:flex;
     flex-direction:column;
     border-radius:12px;
-    box-shadow: 0 10px 30px 10px rgba(0,0,0,0.5);
+    border:1px solid rgb(255,225,0);
     transition: 0.3s ease-in-out;
+    -webkit-box-shadow: -1px 56px 54px -40px rgba(231,166,26,1);
+    -moz-box-shadow: -1px 56px 54px -40px rgba(231,166,26,1);
+    box-shadow: -1px 56px 54px -40px rgba(231,166,26,1);
 
 
     :hover{
@@ -147,6 +172,17 @@ const Card = styled.div`
             border-radius:10px;
         }
     }
+
+
+    @media(min-width: 990px){
+        border:4px solid rgb(255,225,0);
+        :hover{
+            -webkit-box-shadow: 2px 0px 21px 2px rgba(231,166,26,1);
+            -moz-box-shadow: 2px 0px 21px 2px rgba(231,166,26,1);
+            box-shadow: 2px 0px 21px 2px rgba(231,166,26,1);
+        }
+    }
+    
 `
 
 
