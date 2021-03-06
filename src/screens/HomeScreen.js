@@ -3,6 +3,7 @@ import Admissions from '../components/Admissions'
 import Carousel from '../components/Carousel'
 import Header from '../components/Header'
 import Event from '../components/Event'
+import Departments from '../components/Departments'
 
 const HomeScreen = () => {
     return (
@@ -11,6 +12,7 @@ const HomeScreen = () => {
             <Carousel />
             <Admissions />
             <Event />
+            <Departments />
      </div>
     )
 }
