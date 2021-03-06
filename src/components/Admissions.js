@@ -48,7 +48,7 @@ const Admissions = () => {
                                 <span><i className='fa fa-envelope'></i></span><span><input type='email' placeholder='Enter Your Email Address'></input></span>
                                 </InputCont>
                                 <InputCont>
-                                <span><i className='fas fa-user'></i></span><span><input type='text' placeholder='Not Implemented'></input></span>
+                                <span><i class="fas fa-save"></i></span><span><input type='button' ></input>Submit</span>
                                 </InputCont>
                             </Form>
                             </FormWrapper>
