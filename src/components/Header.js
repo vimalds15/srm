@@ -14,8 +14,8 @@ const Header = () => {
           <Nav.Link href="#link"><i className="fas fa-headphones"></i> Support</Nav.Link>
             <NavDropdown title="Quick Links" id="basic-nav-dropdown">
               <NavDropdown.Item href="#admissions"><i className="fas fa-graduation-cap"></i> Admissions</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2"><i className="fas fa-building"></i> Departments</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3"><i className="far fa-calendar-alt"></i> Events</NavDropdown.Item>
+              <NavDropdown.Item href="#deptl"><i className="fas fa-building"></i> Departments</NavDropdown.Item>
+            <NavDropdown.Item href="#eventl"><i className="far fa-calendar-alt"></i> Events</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1"><i className="fas fa-chalkboard-teacher"></i> Faculty</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2"><i className="fas fa-cogs"></i> Career</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.3"><i className="fas fa-university"></i> Campus Life</NavDropdown.Item>
@@ -29,6 +29,7 @@ const Header = () => {
           </div>
         </Navbar.Collapse>
     </Navbar>
+
     )
 }
 

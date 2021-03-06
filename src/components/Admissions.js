@@ -9,11 +9,11 @@ const Admissions = () => {
     const [internationalShow, setInternationalShow] = useState(false);
 
     return (
-        <Container id='admissions'>
+        <Container id='admissions' >
              <Row sm={true} md={true} lg={true}>
                 <Col lg={true}>
                     <AdmissionCont>
-                        <Title>Admissions</Title>
+                        <Title >Admissions</Title>
                         <Wrapper>
                             <Cont>
                                 <CardCont onClick={()=>setIndianShow(true)}>
