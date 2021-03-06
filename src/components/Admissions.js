@@ -111,9 +111,9 @@ const Admissions = () => {
                         <p></p>
                         Also counselling will be conducted as per marks
                         <p></p>
-                        Click <a style={{"color":"rgb(255,280,0)"}} href="https://www.srmist.edu.in/admission-india/"><u>HERE</u></a> for more info:
+                        Click <a target='_' style={{"color":"rgb(255,280,0)"}} href="https://www.srmist.edu.in/admission-india/"><u>HERE</u></a> for more info:
                         <p></p><p></p>
-                        <h7>*Scholrship available --Terms & Conditions apply*</h7>
+                        <h7>*Scholarship available --Terms & Conditions apply*</h7>
                         </p>
                     </Modal.Body>
                 </Modal>
@@ -181,7 +181,7 @@ const Admissions = () => {
                         <p></p>
                         Also counselling will be conducted as per marks . Advance Payment of 1000 USD can be done towards pre booking of seats for preferred courses, which is non-refundable.
                         <p></p>
-                        Click <a style={{"color":"rgb(255,280,0)"}} href="https://www.srmist.edu.in/admission-international/"><u>HERE</u></a> for more info:
+                        Click <a target='_' style={{"color":"rgb(255,280,0)"}} href="https://www.srmist.edu.in/admission-international/"><u>HERE</u></a> for more info:
                         <p></p><p></p>
                         <h7>*Scholarship available --Terms & Conditions apply*</h7>
                         </p>
