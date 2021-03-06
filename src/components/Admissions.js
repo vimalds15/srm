@@ -48,7 +48,7 @@ const Admissions = () => {
                                 <span><i className='fa fa-envelope'></i></span><span><input type='email' placeholder='Enter Your Email Address'></input></span>
                                 </InputCont>
                                 <InputCont>
-                                <span><i className='fas fa-user'></i></span><span><input type='text' placeholder='Not Implemented'></input></span>
+                                <span><i class="fas fa-save"></i></span><span><input type='button' ></input>Submit</span>
                                 </InputCont>
                             </Form>
                             </FormWrapper>
@@ -101,6 +101,20 @@ const Admissions = () => {
                     <ul>
                         For Engineering Admissions you must meet the following requirements
                         </ul>
+                        <p>
+                        You need to write an entrance exam called SRMJEEE to be eligable to move forward to the next step
+                        the exam should be undertake by students who is willing to learn <p></p>
+                        <p>Engeineering</p>
+                        <p>Medical & Health Science</p>
+                        <p>Management</p>
+                        <p>Science & Humanities</p>
+                        <p></p>
+                        Also counselling will be conducted as per marks
+                        <p></p>
+                        Click <a href="https://www.srmist.edu.in/admission-india/"><u>HERE</u></a> for more info:
+                        <p></p><p></p>
+                        <h7>*Scholrship available --Terms & Conditions apply*</h7>
+                        </p>
                     </Modal.Body>
                 </Modal>
             }
@@ -151,35 +165,25 @@ const Admissions = () => {
                             borderBottom: "4px solid rgb(250, 225, 0)",
                                 
                         }}>
+                       <p>
+                        Follow these Steps to be part of SRM Institute of Sciene & Technology
+                        </p>
+                    <ul>
+                        For Engineering Admissions you must meet the following requirements
+                        </ul>
                         <p>
-                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                            ipsam atque a dolores quisquam quisquam adipisci possimus
-                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                            deleniti rem!
-                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                            ipsam atque a dolores quisquam quisquam adipisci possimus
-                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                            deleniti rem!
-                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                            ipsam atque a dolores quisquam quisquam adipisci possimus
-                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                            deleniti rem!
-                            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-                            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-                            ipsam atque a dolores quisquam quisquam adipisci possimus
-                            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-                            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-                            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-                            deleniti rem!
+                        You need to write an entrance exam called SRMJEEE to be eligable to move forward to the next step
+                        the exam should be undertake by students who is willing to learn <p></p>
+                        <p>Engeineering</p>
+                        <p>Medical & Health Science</p>
+                        <p>Management</p>
+                        <p>Science & Humanities</p>
+                        <p></p>
+                        Also counselling will be conducted as per marks . Advance Payment of 1000 USD can be done towards pre booking of seats for preferred courses, which is non-refundable.
+                        <p></p>
+                        Click <a href="https://www.srmist.edu.in/admission-international/"><u>HERE</u></a> for more info:
+                        <p></p><p></p>
+                        <h7>*Scholrship available --Terms & Conditions apply*</h7>
                         </p>
                     </Modal.Body>
                 </Modal>
