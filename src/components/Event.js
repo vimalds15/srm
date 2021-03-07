@@ -59,10 +59,6 @@ background:white;
 
 @media(min-width:990px){
     height:100vh;
-    background:#111;
-    border-left:4px solid rgb(255,225,0);
-    border-right:4px solid rgb(255,225,0);
-    border-bottom:4px solid rgb(255,225,0);
 }
 
 @media(min-width:1040px){
@@ -89,11 +85,9 @@ const Title = styled.div`
     }
 
     @media(min-width:990px){
+        border-top:2px solid #fafafa;
+       
         
-        border-left:4px solid rgb(255,225,0);
-        border-right:4px solid rgb(255,225,0);
-        border-top:4px solid rgb(255,225,0);
-        background:#111;
 
         h1{
             color:rgb(255,225,0);
@@ -147,7 +141,6 @@ const Card = styled.div`
         margin-top: -140px;
         padding; 10px 15px;
         text-align:center;
-        color:#111;
         visibility:hidden;
         opacity:0;
         transition: 0.3s ease-in-out;
@@ -179,7 +172,7 @@ const Card = styled.div`
 
 
     @media(min-width: 990px){
-        border:4px solid rgb(255,225,0);
+        border:1px solid rgb(255,225,0);
         :hover{
             -webkit-box-shadow: 2px 0px 21px 2px rgba(231,166,26,1);
             -moz-box-shadow: 2px 0px 21px 2px rgba(231,166,26,1);

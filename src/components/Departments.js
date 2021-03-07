@@ -8,15 +8,17 @@ import hum from '../images/departments/sci.jpg'
 const Departments = () => {
     return (
         <div id='deptl' style={{'background':'#232427'}}>
-        <Title> <h1>Departments</h1></Title>
+        <Title> <h1>Academics</h1></Title>
         <Wrapper>
         <div className='container'>
             <div className='card'>
                 <div className='box'>
-                        <div className='content'>
+                    <div className='content'>
+                        <a target='_' href="https://www.srmist.edu.in/academics/engineering">
                         <img src={eng} alt='eng' />
                         <h3>Engineering</h3>
                         <p>We have long been at the forefront of breakthrough research and innovation. We offer several degree programs,...</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -25,10 +27,12 @@ const Departments = () => {
             <div className='container'>
             <div className='card'>
                 <div className='box'>
-                    <div className='content'>
+                            <div className='content'>
+                            <a target='_' href="https://www.srmist.edu.in/medical-college">
                             <img src={med} alt='med' />
                             <h3 id='medi'>Medical & Health Sciences</h3>
-                            <p>Join us in pioneering research, healthcare and implementing effective clinical therapies to improve living...</p>
+                                <p>Join us in pioneering research, healthcare and implementing effective clinical therapies to improve living...</p>
+                                </a>
                     </div>
                 </div>
             </div>
@@ -37,10 +41,12 @@ const Departments = () => {
             <div className='container'>
             <div className='card'>
                 <div className='box'>
-                    <div className='content'>
+                        <div className='content'>
+                        <a target='_' href="https://www.srmist.edu.in/academics/management">
                         <img src={mgmnt} alt='mgmnt' />
                         <h3>Management</h3>
                         <p>Creating effective leaders who can provide innovative ideas and solutions to change the world...</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -49,11 +55,12 @@ const Departments = () => {
             <div className='container'>
             <div className='card'>
                 <div className='box'>
-                    <div className='content'>
+                        <div className='content'>
+                        <a target='_' href="https://www.srmist.edu.in/academics/science-and-humanities">
                         <img src={hum}  alt='hum'/>
                         <h3>Science & Humanities</h3>
                         <p>It is the place for fundamental research, curiosity driven, where free, open and critical inquiry is pursued</p>
-
+                        </a>
                     </div>
                 </div>
             </div>
@@ -69,7 +76,7 @@ const Wrapper = styled.div`
     display:flex;
     justify-content:center;
     font-weight:bold;
-    
+    transition:all .5s ;
     align-items:center;
     background:#232427;
    
@@ -122,7 +129,7 @@ const Wrapper = styled.div`
         }
 
         h3{
-            color:rgb(255,225,0);
+            color:#fc3d3d;
             padding:10px;
             font-weight:bold;
         }
@@ -137,11 +144,21 @@ const Wrapper = styled.div`
             padding:2px;
             
         }
+
+        a{
+            text-decoration:none;
+
+        }
     }
 
     .container .card .box:hover{
         transform:translateY(-50px);
+        
         // box-shadow: 0 40px 70px  rgba(0,0,0,0.5);
+
+        p{
+            color:white;
+        }
     }
 `
 
@@ -151,7 +168,7 @@ const Title = styled.div`
     background:#232427;
 
     h1{
-    color:rgb(255,225,0);
+    color:#fc3d3d;
 
     padding-top:50px;
     padding-bottom:50px;
