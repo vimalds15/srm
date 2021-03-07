@@ -4,6 +4,7 @@ import Carousel from '../components/Carousel'
 import Header from '../components/Header'
 import Event from '../components/Event'
 import Departments from '../components/Departments'
+import Research from '../components/Research'
 
 const HomeScreen = () => {
     return (
@@ -13,6 +14,7 @@ const HomeScreen = () => {
             <Admissions />
             <Event />
             <Departments />
+            <Research />
      </div>
     )
 }
