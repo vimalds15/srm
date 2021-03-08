@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 const Departments = () => {
 
     useEffect(() => {
-        AOS.init({ duration:1000,});
+        AOS.init({ duration:2500,});
     },[])
 
     return (

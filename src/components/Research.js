@@ -13,7 +13,7 @@ import 'aos/dist/aos.css';
 const Research = () => {
 
     useEffect(() => {
-        AOS.init({ duration:1000,});
+        AOS.init({ duration:3000,});
     },[])
 
     return (

@@ -12,7 +12,7 @@ const Event = () => {
 
 
     useEffect(() => {
-        AOS.init({ duration:1000,});
+        AOS.init({ duration:2500,});
     },[])
 
     return (
