@@ -1,23 +1,31 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styled from 'styled-components'
 import eng from '../images/departments/eng.jpg'
 import med from '../images/departments/medical.jpg'
 import mgmnt from '../images/departments/man.jpg'
 import hum from '../images/departments/sci.jpg'
+//Animation library
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Departments = () => {
+
+    useEffect(() => {
+        AOS.init({ duration:1000,});
+    },[])
+
     return (
         <div id='deptl' style={{'background':'#232427'}}>
-        <Title> <h1>Academics</h1></Title>
+        <Title> <h1 data-aos='fade-up'>Academics</h1></Title>
         <Wrapper>
         <div className='container'>
-            <div className='card'>
+            <div data-aos='zoom-in' className='card'>
                 <div className='box'>
                     <div className='content'>
                         <a target='_' href="https://www.srmist.edu.in/academics/engineering">
                         <img src={eng} alt='eng' />
-                        <h3>Engineering</h3>
-                        <p>We have long been at the forefront of breakthrough research and innovation. We offer several degree programs,...</p>
+                        <h3 data-aos='fade-left'>Engineering</h3>
+                        <p data-aos='fade-right'>We have long been at the forefront of breakthrough research and innovation. We offer several degree programs,...</p>
                         </a>
                     </div>
                 </div>
@@ -25,13 +33,13 @@ const Departments = () => {
             </div>
 
             <div className='container'>
-            <div className='card'>
+            <div data-aos='zoom-in' className='card'>
                 <div className='box'>
                             <div className='content'>
                             <a target='_' href="https://www.srmist.edu.in/medical-college">
                             <img src={med} alt='med' />
-                            <h3 id='medi'>Medical & Health Sciences</h3>
-                                <p>Join us in pioneering research, healthcare and implementing effective clinical therapies to improve living...</p>
+                            <h3 data-aos='fade-left' id='medi'>Medical & Health Sciences</h3>
+                                <p data-aos='fade-right'>Join us in pioneering research, healthcare and implementing effective clinical therapies to improve living...</p>
                                 </a>
                     </div>
                 </div>
@@ -39,13 +47,13 @@ const Departments = () => {
             </div>
 
             <div className='container'>
-            <div className='card'>
+            <div data-aos='zoom-in' className='card'>
                 <div className='box'>
                         <div className='content'>
                         <a target='_' href="https://www.srmist.edu.in/academics/management">
                         <img src={mgmnt} alt='mgmnt' />
-                        <h3>Management</h3>
-                        <p>Creating effective leaders who can provide innovative ideas and solutions to change the world...</p>
+                        <h3 data-aos='fade-left'>Management</h3>
+                        <p data-aos='fade-right'>Creating effective leaders who can provide innovative ideas and solutions to change the world...</p>
                         </a>
                     </div>
                 </div>
@@ -53,13 +61,13 @@ const Departments = () => {
             </div>
 
             <div className='container'>
-            <div className='card'>
+            <div data-aos='zoom-in' className='card'>
                 <div className='box'>
                         <div className='content'>
                         <a target='_' href="https://www.srmist.edu.in/academics/science-and-humanities">
                         <img src={hum}  alt='hum'/>
-                        <h3>Science & Humanities</h3>
-                        <p>It is the place for fundamental research, curiosity driven, where free, open and critical inquiry is pursued</p>
+                        <h3 data-aos='fade-left'>Science & Humanities</h3>
+                        <p data-aos='fade-right' >It is the place for fundamental research, curiosity driven, where free, open and critical inquiry is pursued</p>
                         </a>
                     </div>
                 </div>
