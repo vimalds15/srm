@@ -42,7 +42,7 @@ const Research = () => {
                 </div>
                 <div className="content">
                     <a target='_' href="https://www.srmist.edu.in/nrc/">
-                    <h2>Nano technology Research</h2>
+                <h2>Nano technology Research</h2>
                     <p>Characterization of cutting-edge nanostructured
                     </p>
                     </a>
