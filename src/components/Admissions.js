@@ -14,7 +14,7 @@ const Admissions = () => {
     const [internationalShow, setInternationalShow] = useState(false);
 
     useEffect(() => {
-        AOS.init({ duration:1000,});
+        AOS.init({ duration:2000,});
     },[])
 
     return (
