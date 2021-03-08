@@ -142,6 +142,7 @@ const Wrapper = styled.div`
 
         p{
             padding:2px;
+            color:#968f8f;
             
         }
 

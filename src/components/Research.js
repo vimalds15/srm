@@ -42,7 +42,7 @@ const Research = () => {
                 </div>
                 <div className="content">
                     <a target='_' href="https://www.srmist.edu.in/nrc/">
-                    <h2>Nano technlology Research</h2>
+                    <h2>Nano technology Research</h2>
                     <p>Characterization of cutting-edge nanostructured
                     </p>
                     </a>
@@ -62,7 +62,7 @@ const Container = styled.div`
     align-items:center;
     justify-content:center;
     min-height:70vh;
-    background:#f3f3f3;
+    background:#111;
     overflow:hidden;
     
 `
@@ -75,7 +75,6 @@ const Wrapper = styled.div`
     flex-wrap: wrap;
     align-items:center;
     justify-content:center;
-    transform: skewY(-10deg);
     padding-bottom:60px;
    
     a{
@@ -133,6 +132,10 @@ const Card = styled.div`
         color:#fc3d3d;
     }
 
+    .content p{
+        color:#968f8f;
+    }
+
     .content{
         position:relative;
         width:100%;
@@ -149,9 +152,9 @@ const Card = styled.div`
         position: absolute;
         left: 0;
         bottom: 0;
+        height:300px;
         width:100%;
-        height: 400px;
-        background: linear-gradient(transparent, transparent, rgba(0,0,0,0.1));
+        background: linear-gradient(transparent, transparent, rgba(251,61,61,0.3));
         transform-origin:bottom;
         transform: skewX(45deg);
         transition:0.5s;
@@ -168,10 +171,10 @@ const Card = styled.div`
     :before{
        content:'';
        position:absolute;
-       top:-15px;
+       top:-12px;
        left:0;
        width:100%;
-       height:15px;
+       height:12px;
        background-image:url(${img1});
        transform-origin:bottom;
        transform:skewX(45deg);
@@ -181,9 +184,9 @@ const Card = styled.div`
     :after{
         content:'';
         position:absolute;
-        top:-15px;
-        left:-15px;
-        width:15px;
+        top:-12px;
+        left:-12px;
+        width:12px;
         height:100%;
         background-image:url(${img1});
         transform-origin:left;
