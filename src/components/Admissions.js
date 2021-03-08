@@ -1,22 +1,31 @@
-import React,{useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Row, Col,Modal } from 'react-bootstrap'
 import styled from 'styled-components'
 import india from '../images/admissions/india.jpg'
 import international from '../images/admissions/international.jpg'
 
+//Animation Library
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 const Admissions = () => {
     const [indianShow, setIndianShow] = useState(false);
     const [internationalShow, setInternationalShow] = useState(false);
+
+    useEffect(() => {
+        AOS.init({ duration:1000,});
+    },[])
 
     return (
         <Container id='admissions' >
              <Row sm={true} md={true} lg={true}>
                 <Col lg={true}>
                     <AdmissionCont>
-                        <Title >Admissions</Title>
+                        <Title data-aos='fade-up' >Admissions</Title>
                         <Wrapper>
                             <Cont>
-                                <CardCont onClick={()=>setIndianShow(true)}>
+                                <CardCont data-aos='fade-right'  onClick={()=>setIndianShow(true)}>
                                         <img src={india} alt='india' />
                                     <p>Admission for Indian Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
                                   <h3>Know More <span><i className='fas fa-arrow-circle-right'></i></span></h3>  
@@ -24,7 +33,7 @@ const Admissions = () => {
                                 
                         </Cont>
                         <Cont >
-                            <CardCont onClick={() => setInternationalShow(true)} >
+                            <CardCont data-aos='fade-left' onClick={() => setInternationalShow(true)} >
                             <img src={international} alt='international' />
                                     <p>Admission for International Students  <span><i className='fas fa-arrow-circle-right'></i></span></p>
                                     <h3>Know More <span><i className='fas fa-arrow-circle-right'></i></span></h3>
@@ -35,19 +44,19 @@ const Admissions = () => {
                 </Col>
                 <Col lg={3}>
                 <EnquiryCont >
-                        <EnqTitle>Submit an Enquiry</EnqTitle>
+                        <EnqTitle data-aos='fade-bottom'>Submit an Enquiry</EnqTitle>
                         <FormWrapper>
                             <Form>
-                                <InputCont>
+                                <InputCont data-aos='fade-left'>
                                 <span><i className='fas fa-user'></i></span><span><input type='text' placeholder='Enter Your Name'></input></span>
                                 </InputCont>
-                                <InputCont>
+                                <InputCont data-aos='fade-left'>
                                 <span><i className='fa fa-phone'></i></span><span><input type='text' placeholder='Enter Your Mobile Number'></input></span>
                                 </InputCont>
-                                <InputCont>
+                                <InputCont data-aos='fade-left'>
                                 <span><i className='fa fa-envelope'></i></span><span><input type='email' placeholder='Enter Your Email Address'></input></span>
                                 </InputCont>
-                                <InputCont>
+                                <InputCont data-aos='fade-left'>
                                     <span><i class="fas fa-save"></i></span><span><Button onClick={(e) => e.preventDefault()}>Submit</Button></span>
                                 </InputCont>
                             </Form>

@@ -1,18 +1,28 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import img1 from '../images/events/img1.jpg'
 import img2 from '../images/events/img2.jpg'
 import img3 from '../images/events/img3.jpg'
 import styled from 'styled-components'
 
+//Animation Library
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Event = () => {
+
+
+    useEffect(() => {
+        AOS.init({ duration:1000,});
+    },[])
+
     return (
         <div id='eventl'>
-        <Title> <h1> SRM EVENTS </h1></Title>
+        <Title> <h1 data-aos='fade-bottom'> SRM EVENTS </h1></Title>
         <Container>
             <Wrapper>
             <Card>
                 <div className='imgBx'>
-                    <img className='photo' src={img1} alt='img1'/>
+                    <img data-aos='zoom-in' className='photo' src={img1} alt='img1'/>
                 </div>
                 <div className="content">
                     <h2>Convocation</h2>
@@ -23,7 +33,7 @@ const Event = () => {
 
             <Card>
             <div className='imgBx'>
-                    <img className='photo' src={img2} alt='img2' />
+                    <img data-aos='zoom-in' className='photo' src={img2} alt='img2' />
                 </div>
                 <div className="content">
                     <h2>ICON BEST-2021</h2>
@@ -34,7 +44,7 @@ const Event = () => {
 
             <Card>
             <div className='imgBx'>
-                    <img className='photo' src={img3} alt='img3' />
+                    <img data-aos='zoom-in' className='photo' src={img3} alt='img3' />
                 </div>
                 <div className="content">
                     <h2>Research Day 2021</h2>

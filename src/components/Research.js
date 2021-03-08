@@ -1,24 +1,34 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import img1 from '../images/research/img.jpg'
 import img2 from '../images/research/img2.jpg'
 import img3 from '../images/research/img3.jpg'
 import styled from 'styled-components'
 
+//Animation Library
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const Research = () => {
+
+    useEffect(() => {
+        AOS.init({ duration:1000,});
+    },[])
+
     return (
         <div>
-            <Title><h1>Research</h1></Title>
+            <Title><h1 data-aos='fade-bottom'>Research</h1></Title>
             <Container>
             <Wrapper>
-            <Card>
+            <Card >
                 <div className='imgBx'>
                     <img className='photo i1' src={img1} alt='img1' />
                 </div>
                         <div className="content">
                         <a target='_' href="https://www.srmist.edu.in/directorate-of-research/">
-                        <h2>Directorate of Research</h2>
-                        <p>Fosters multi-disciplinary all pervasive research</p>
+                        <h2 data-aos='fade-bottom'>Directorate of Research</h2>
+                        <p data-aos='fade-bottom'>Fosters multi-disciplinary all pervasive research</p>
                         </a>
                 </div>
             </Card>
@@ -29,8 +39,8 @@ const Research = () => {
                 </div>
                     <div className="content">
                     <a target='_' href="https://www.srmist.edu.in/erc/index.html">        
-                    <h2>Earthquake Research Cell</h2>
-                    <p>Advanced Research on occurrence and predicvtion of Earthquakes
+                    <h2 data-aos='fade-bottom'>Earthquake Research Cell</h2>
+                    <p data-aos='fade-bottom'>Advanced Research on occurrence and predicvtion of Earthquakes
                     </p>
                     </a>     
                 </div>
@@ -42,8 +52,8 @@ const Research = () => {
                 </div>
                 <div className="content">
                     <a target='_' href="https://www.srmist.edu.in/nrc/">
-                    <h2>Nano technology Research</h2>
-                    <p>Characterization of cutting-edge nanostructured
+                <h2 data-aos='fade-bottom'>Nano technology Research</h2>
+                    <p data-aos='fade-bottom'>Characterization of cutting-edge nanostructured
                     </p>
                     </a>
                 </div>
@@ -171,10 +181,10 @@ const Card = styled.div`
     :before{
        content:'';
        position:absolute;
-       top:-12px;
+       top:-10px;
        left:0;
        width:100%;
-       height:12px;
+       height:10px;
        background-image:url(${img1});
        transform-origin:bottom;
        transform:skewX(45deg);
@@ -184,9 +194,9 @@ const Card = styled.div`
     :after{
         content:'';
         position:absolute;
-        top:-12px;
-        left:-12px;
-        width:12px;
+        top:-11px;
+        left:-10px;
+        width:10px;
         height:100%;
         background-image:url(${img1});
         transform-origin:left;
