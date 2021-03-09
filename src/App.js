@@ -2,6 +2,7 @@ import React,{useEffect,useState} from 'react'
 import Loader from './components/Loader';
 import HomeScreen from './screens/HomeScreen'
 
+
 function App() {
   const [loading, setLoading] = useState(false);
 
