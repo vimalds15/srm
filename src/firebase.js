@@ -1,11 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyBNgjWlswmLdQzr0tL1AYrD5anXXk4eHQo",
-    authDomain: "srm-livechat.firebaseapp.com",
-    projectId: "srm-livechat",
-    storageBucket: "srm-livechat.appspot.com",
-    messagingSenderId: "28727811843",
-    appId: "1:28727811843:web:3cd344b7eb5133bad81336",
-    measurementId: "G-4FRJPQ7Q7L"
-  };
+  apiKey: "AIzaSyAjBeNFl_waS40ZgrMCliJ9tJqluCRPsnA",
+  authDomain: "srm-livechat-add8a.firebaseapp.com",
+  projectId: "srm-livechat-add8a",
+  storageBucket: "srm-livechat-add8a.appspot.com",
+  messagingSenderId: "856174798403",
+  appId: "1:856174798403:web:91392039becdf36d8896f6"
+};
 
-  export default firebaseConfig
+export default firebaseConfig
