@@ -18,7 +18,7 @@ const Research = () => {
 
     return (
         <div>
-            <Title><h1 data-aos='fade-bottom'>Research</h1></Title>
+            <Title><h1 data-aos='fade-bottom'>Research <i class="fas fa-rocket"></i></h1></Title>
             <Container>
             <Wrapper>
             <Card >
@@ -72,7 +72,7 @@ const Container = styled.div`
     align-items:center;
     justify-content:center;
     min-height:70vh;
-    background:#111;
+    background:#fc3d3d;
     overflow:hidden;
     
 `
