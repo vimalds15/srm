@@ -17,7 +17,7 @@ const Event = () => {
 
     return (
         <div id='eventl'>
-        <Title> <h1 data-aos='fade-bottom'> SRM EVENTS </h1></Title>
+        <Title> <h1 data-aos='fade-bottom'> SRM EVENTS <i class="far fa-calendar-alt"></i></h1></Title>
         <Container>
             <Wrapper>
             <Card>
@@ -65,7 +65,7 @@ display:flex;
 justify-content:center;
 align-items:center
 padding-top:50px;
-background:white;
+background:blue;
 
 @media(min-width:990px){
     height:100vh;
@@ -100,7 +100,7 @@ const Title = styled.div`
         
 
         h1{
-            color:rgb(255,225,0);
+            color:rgb(0,0,225);
         }
     }
 `
