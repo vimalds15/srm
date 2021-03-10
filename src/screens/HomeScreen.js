@@ -6,6 +6,7 @@ import Event from '../components/Event'
 import Departments from '../components/Departments'
 import Research from '../components/Research'
 import Chat from '../components/Chat'
+import CampusLife from '../components/CampusLife'
 
 const HomeScreen = () => {
 
@@ -17,6 +18,7 @@ const HomeScreen = () => {
             <Event />
             <Departments />
             <Research />
+            <CampusLife />
             <Chat />
      </div>
      
