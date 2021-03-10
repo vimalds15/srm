@@ -98,7 +98,7 @@ const Wrapper = styled.div`
         justify-content:center;
         align-items:center;
         flex-wrap:wrap;
-        max-width:500px;
+        max-width:400px;
         margin:0px 0;
     }
 
@@ -119,10 +119,10 @@ const Wrapper = styled.div`
 
     .container .card .box{
         position:absolute;
-        top:20px;
-        left:20px;
-        right:20px;
-        bottom:20px;
+        top:16px;
+        left:16px;
+        right:16px;
+        bottom:16px;
         background:@2a2b2f;
         border: 2px solid #1e1f23;
         border-radius:15px;
@@ -143,7 +143,6 @@ const Wrapper = styled.div`
         }
 
         #medi{
-            color:rgn(255,255,0);
             margin-top:10px;
             padding:5px;
         }

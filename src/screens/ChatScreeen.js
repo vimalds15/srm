@@ -54,7 +54,7 @@ function SignIn() {
     
     return (
         <div className='lgpage-wrapper'>
-            <div className='image-cont'>
+            <div className='imag-cont'>
                 <img className='chat-logo' src={load} />
             </div>
             <div className='title'>
@@ -77,7 +77,7 @@ function SignOut() {
           <img className src={load} alt="srm logo" />
           <h1>SRM CONNECT</h1>
           <button className="sgnout-btn" onClick={() => auth.signOut()}>Leave Chat</button>
-         
+      
     </div>
   )
 }
@@ -146,7 +146,9 @@ function ChatMessage(props) {
             </div>
             </div>
       
-  )
+    )
+  
+
 }
 
 export default ChatScreen;

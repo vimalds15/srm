@@ -1,18 +1,45 @@
 import React from 'react'
-import styled from 'styled-components'
+import '../css/clife.css'
+import art from '../images/campuslife/art.jpg'
+import athlet from '../images/campuslife/athlet.jpg'
+import studlife from '../images/campuslife/student-life.jpg'
 
 const CampusLife = () => {
     return (
-        <div>
-            <input type="radio" name='slider' id='s1' />
-            <input type="radio" name='slider' id='s2' />
-            <input type="radio" name='slider' id='s3' checked />
-            <input type="radio" name='slider' id='s4' />
-            <input type="radio" name='slider' id='s5' />
+        <div className='containr'>
+            <h1 className='tit'>Campus Life</h1>
+            <div class="copy-box">
+                 <div class="inner">
+                    <div class="line right">
+                    <div class="scanner"></div>
+                    </div>
+                    <img className='im1 pics' src={art} />
+                    <h6 className='hed'>Arts & Culture</h6>
+                    <p className='det'>Several student clubs and cultural events to unwind talents</p>
+                </div>
+                </div>
 
-            <label form='s1' id='slide1'>
-                <img src="" alt="pic" height='100%' width='100%' />
-            </label>
+<div class="copy-box two">
+  <div class="inner">
+    <div class="line right">
+      <div class="scanner"></div>
+                    </div>
+                    <img className='pics' src={athlet} />
+                    <h6 className='hed'>Athletics & Fitness</h6>
+                    <p className='det'>Best in class facilities and coaches puts you on top of the world</p>
+  </div>
+</div>
+            
+            <div class="copy-box two">
+  <div class="inner">
+    <div class="line right">
+      <div class="scanner"></div>
+                    </div>
+                    <img className='pics' src={studlife} />
+                    <h6 className='hed'>Students Life</h6>
+                    <p className='det'>Exciting opportunities, the way you want to be, choice are yours</p>
+  </div>
+</div>
         </div>
     )
 }

@@ -25,7 +25,7 @@ const Container = styled.div`
 const ImageCont = styled.div`
     height:fit-content;
     width:fit-content;
-    background:red;
+    // background:red;
     border-radius:50%;
     animation-name:anim;
     animation-duration:3s;
