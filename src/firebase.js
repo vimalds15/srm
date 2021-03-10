@@ -1,11 +1,18 @@
-const firebaseConfig = {
-    apiKey: "AIzaSyBNgjWlswmLdQzr0tL1AYrD5anXXk4eHQo",
-    authDomain: "srm-livechat.firebaseapp.com",
-    projectId: "srm-livechat",
-    storageBucket: "srm-livechat.appspot.com",
-    messagingSenderId: "28727811843",
-    appId: "1:28727811843:web:3cd344b7eb5133bad81336",
-    measurementId: "G-4FRJPQ7Q7L"
-  };
+import firebase from 'firebase';
 
-  export default firebaseConfig
+const firebaseConfig = {
+  apiKey: "AIzaSyAGyLjWL9QYPjHDuFhbSjxR0kF_TWBJFcQ",
+  authDomain: "srmist-6ee9a.firebaseapp.com",
+  projectId: "srmist-6ee9a",
+  storageBucket: "srmist-6ee9a.appspot.com",
+  messagingSenderId: "84795150643",
+  appId: "1:84795150643:web:13fc971fd3ead2a7ed2e46"
+};
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
+
+
+export { db, auth };
+export default db;

@@ -65,7 +65,7 @@ display:flex;
 justify-content:center;
 align-items:center
 padding-top:50px;
-background:blue;
+background:white;
 
 @media(min-width:990px){
     height:100vh;
