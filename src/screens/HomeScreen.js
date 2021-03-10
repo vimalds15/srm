@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Admissions from '../components/Admissions'
 import Carousel from '../components/Carousel'
 import Header from '../components/Header'

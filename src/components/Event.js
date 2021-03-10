@@ -96,12 +96,7 @@ const Title = styled.div`
 
     @media(min-width:990px){
         border-top:2px solid #fafafa;
-       
-        
 
-        h1{
-            color:rgb(0,0,225);
-        }
     }
 `
 
