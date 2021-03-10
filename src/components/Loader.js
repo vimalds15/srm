@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import load from '../images/load.png'
+import im from '../images/load.png'
 
 const Loader = () => {
     return (
         <Container>
             <ImageCont>
-                <Image src={load}></Image>
+                <Image src={im}></Image>
             </ImageCont>
         </Container>
     )

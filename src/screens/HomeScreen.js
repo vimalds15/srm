@@ -5,21 +5,21 @@ import Header from '../components/Header'
 import Event from '../components/Event'
 import Departments from '../components/Departments'
 import Research from '../components/Research'
-
+import Chat from '../components/Chat'
 
 const HomeScreen = () => {
 
-    
-
     return (
-    <div>
+    <div >
         <Header />
             <Carousel />
             <Admissions />
             <Event />
             <Departments />
             <Research />
+            <Chat />
      </div>
+     
     )
 }
 
