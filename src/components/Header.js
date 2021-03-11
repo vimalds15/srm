@@ -4,7 +4,7 @@ import { Navbar,Nav,NavDropdown } from 'react-bootstrap'
 const Header = () => {
   return (
     <Navbar sticky='top' bg="light" expand="lg">
-        <Navbar.Brand href="#home"><img className='logo' src={logo} alt="SRM" /></Navbar.Brand>
+        <Navbar.Brand href="#cars"><img className='logo' src={logo} alt="SRM" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="mt-10">
         <div className='rightHead'>
