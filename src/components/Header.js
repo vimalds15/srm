@@ -11,7 +11,6 @@ const Header = () => {
           <Nav className="mr-auto ">
             <Nav.Link href="https://www.srmist.edu.in/aboutus/srm-university-where-you-have-freedom-take-wings"><i className="fas fa-server"></i> About Us</Nav.Link>
           <Nav.Link href="https://www.srmist.edu.in/Announcements"><i className="fas fa-volume-up"></i> Announcements</Nav.Link>
-          <Nav.Link href="#link"><i className="fas fa-headphones"></i> Support</Nav.Link>
             <NavDropdown title="Quick Links" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://www.srmist.edu.in/#admission"><i className="fas fa-graduation-cap"></i> Admissions</NavDropdown.Item>
               <NavDropdown.Item href="#deptl"><i className="fas fa-building"></i> Departments</NavDropdown.Item>
