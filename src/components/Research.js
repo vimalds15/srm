@@ -17,7 +17,7 @@ const Research = () => {
     },[])
 
     return (
-        <div>
+        <div id="resc">
             <Title><h1 data-aos='fade-bottom'>Research <i class="fas fa-rocket"></i></h1></Title>
             <Container>
             <Wrapper>
