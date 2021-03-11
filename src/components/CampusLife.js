@@ -6,7 +6,7 @@ import studlife from '../images/campuslife/student-life.jpg'
 
 const CampusLife = () => {
     return (
-        <div className='containr'>
+        <div className='containr' id='camlife'>
             <h1 className='tit'>Campus Life</h1>
             <div class="copy-box">
                  <div class="inner">
