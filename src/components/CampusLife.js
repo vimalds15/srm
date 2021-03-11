@@ -7,7 +7,7 @@ import studlife from '../images/campuslife/student-life.jpg'
 const CampusLife = () => {
     return (
         <div className='containr' id='camlife'>
-            <h1 className='tit'>Campus Life</h1>
+            <h1 className='tit'>Campus Life <i className="fas fa-university"></i></h1>
             <div class="copy-box">
                  <div class="inner">
                     <div class="line right">
