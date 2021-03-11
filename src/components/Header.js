@@ -12,8 +12,8 @@ const Header = () => {
             <Nav.Link href="https://www.srmist.edu.in/aboutus/srm-university-where-you-have-freedom-take-wings"><i className="fas fa-server"></i> About Us</Nav.Link>
           <Nav.Link href="https://www.srmist.edu.in/Announcements"><i className="fas fa-volume-up"></i> Announcements</Nav.Link>
             <NavDropdown title="Quick Links" id="basic-nav-dropdown">
-              <NavDropdown.Item href="https://www.srmist.edu.in/#admission"><i className="fas fa-graduation-cap"></i> Admissions</NavDropdown.Item>
-            <NavDropdown.Item href="https://www.srmist.edu.in/#events"><i className="far fa-calendar-alt"></i> Events</NavDropdown.Item>
+              <NavDropdown.Item href="#admissions"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Admissions</NavDropdown.Item>
+            <NavDropdown.Item href="#eventl"><i className="far fa-calendar-alt"></i> Events</NavDropdown.Item>
               <NavDropdown.Item href="https://www.srmist.edu.in/content/gateway-faculty"><i className="fas fa-chalkboard-teacher"></i> Faculty</NavDropdown.Item>
               <NavDropdown.Item href="http://srm.careers/"><i className="fas fa-cogs"></i> Career</NavDropdown.Item>
             <NavDropdown.Item href="https://www.srmist.edu.in/#campus"><i className="fas fa-university"></i> Campus Life</NavDropdown.Item>
