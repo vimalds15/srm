@@ -22,7 +22,7 @@ const Admissions = () => {
              <Row sm={true} md={true} lg={true}>
                 <Col lg={true}>
                     <AdmissionCont>
-                        <Title data-aos='fade-up' >Admissions</Title>
+                        <Title data-aos='fade-up' >Admissions <i class="fa fa-graduation-cap" aria-hidden="true"></i></Title>
                         <Wrapper>
                             <Cont>
                                 <CardCont data-aos='fade-right'  onClick={()=>setIndianShow(true)}>

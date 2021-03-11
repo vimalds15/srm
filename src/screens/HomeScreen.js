@@ -7,6 +7,7 @@ import Departments from '../components/Departments'
 import Research from '../components/Research'
 import Chat from '../components/Chat'
 import CampusLife from '../components/CampusLife'
+import Footer from '../components/Footer'
 
 const HomeScreen = () => {
 
@@ -20,6 +21,7 @@ const HomeScreen = () => {
             <Research />
             <CampusLife />
             <Chat />
+            <Footer />
      </div>
      
     )

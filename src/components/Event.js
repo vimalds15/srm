@@ -25,9 +25,9 @@ const Event = () => {
                     <img data-aos='zoom-in' className='photo' src={img1} alt='img1'/>
                 </div>
                 <div className="content">
-                    <h2>Convocation</h2>
+                    <a href="https://www.srmist.edu.in/announcement/16th-Convocation"><h2>Convocation</h2>
                     <p>SRMIST's 16th Annual Convocation will be held virtually. Rank Holders will be awarded their degrees in person
-                    </p>
+                    </p></a>
                 </div>
             </Card>
 
@@ -36,9 +36,9 @@ const Event = () => {
                     <img data-aos='zoom-in' className='photo' src={img2} alt='img2' />
                 </div>
                 <div className="content">
-                    <h2>ICON BEST-2021</h2>
+                    <a href="https://www.srmist.edu.in/events/icon-best-2021"><h2>ICON BEST-2021</h2>
                     <p>International Conference on Built Environment, Science and Technology (ICON BEST-2021)
-                    </p>
+                    </p></a>
                 </div>
             </Card>
 
@@ -47,9 +47,9 @@ const Event = () => {
                     <img data-aos='zoom-in' className='photo' src={img3} alt='img3' />
                 </div>
                 <div className="content">
-                    <h2>Research Day 2021</h2>
+                    <a href="https://www.srmist.edu.in/events/e-icmta-2021"><h2>Research Day 2021</h2>
                     <p>Research Day 2021 will be celebrated in SRM Institute of Science and Technology, Kattankulathur.
-                    </p>
+                    </p></a>
                 </div>
                 </Card>
                 </Wrapper>

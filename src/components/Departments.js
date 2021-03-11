@@ -16,7 +16,7 @@ const Departments = () => {
 
     return (
         <div id='deptl' style={{'background':'#232427'}}>
-        <Title> <h1 data-aos='fade-up'>Academics</h1></Title>
+        <Title> <h1 data-aos='fade-up'>Academics <i className="fas fa-chalkboard-teacher"></i></h1></Title>
         <Wrapper>
         <div className='container'>
             <div data-aos='zoom-in' className='card'>

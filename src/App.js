@@ -5,7 +5,6 @@ import HomeScreen from './screens/HomeScreen'
 import { BrowserRouter as Router,Route,Switch } from 'react-router-dom'
 
 
-
 function App() {
   const [loading, setLoading] = useState(false);
 
