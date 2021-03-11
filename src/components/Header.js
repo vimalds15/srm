@@ -9,16 +9,16 @@ const Header = () => {
       <Navbar.Collapse id="basic-navbar-nav" className="mt-10">
         <div className='rightHead'>
           <Nav className="mr-auto ">
-            <Nav.Link href="#home"><i className="fas fa-server"></i> About Us</Nav.Link>
-          <Nav.Link href="#link"><i className="fas fa-volume-up"></i> Announcements</Nav.Link>
+            <Nav.Link href="https://www.srmist.edu.in/aboutus/srm-university-where-you-have-freedom-take-wings"><i className="fas fa-server"></i> About Us</Nav.Link>
+          <Nav.Link href="https://www.srmist.edu.in/Announcements"><i className="fas fa-volume-up"></i> Announcements</Nav.Link>
           <Nav.Link href="#link"><i className="fas fa-headphones"></i> Support</Nav.Link>
             <NavDropdown title="Quick Links" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#admissions"><i className="fas fa-graduation-cap"></i> Admissions</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.srmist.edu.in/#admission"><i className="fas fa-graduation-cap"></i> Admissions</NavDropdown.Item>
               <NavDropdown.Item href="#deptl"><i className="fas fa-building"></i> Departments</NavDropdown.Item>
-            <NavDropdown.Item href="#eventl"><i className="far fa-calendar-alt"></i> Events</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1"><i className="fas fa-chalkboard-teacher"></i> Faculty</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2"><i className="fas fa-cogs"></i> Career</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3"><i className="fas fa-university"></i> Campus Life</NavDropdown.Item>
+            <NavDropdown.Item href="https://www.srmist.edu.in/#events"><i className="far fa-calendar-alt"></i> Events</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.srmist.edu.in/content/gateway-faculty"><i className="fas fa-chalkboard-teacher"></i> Faculty</NavDropdown.Item>
+              <NavDropdown.Item href="http://srm.careers/"><i className="fas fa-cogs"></i> Career</NavDropdown.Item>
+            <NavDropdown.Item href="https://www.srmist.edu.in/#campus"><i className="fas fa-university"></i> Campus Life</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.1"><i className="fas fa-medal"></i> Achievements</NavDropdown.Item>
               <NavDropdown.Divider />
               <div className='lgn'>
