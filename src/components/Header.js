@@ -17,10 +17,7 @@ const Header = () => {
               <NavDropdown.Item href="https://www.srmist.edu.in/content/gateway-faculty"><i className="fas fa-chalkboard-teacher"></i> Faculty</NavDropdown.Item>
               <NavDropdown.Item href="http://srm.careers/"><i className="fas fa-cogs"></i> Career</NavDropdown.Item>
             <NavDropdown.Item href="https://www.srmist.edu.in/#campus"><i className="fas fa-university"></i> Campus Life</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <div className='lgn'>
-                <NavDropdown.Item  href="#action/3.4">Login/Sign Up</NavDropdown.Item>
-                </div>
+                <NavDropdown.Item  href="https://www.srmist.edu.in/content/admission-india-portal"><i class="fas fa-user-graduate"></i> Admission enquiry</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           </div>
