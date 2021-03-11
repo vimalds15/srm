@@ -10,7 +10,7 @@ import c4 from '../images/carousel/c4.jpg'
 const Caroussel = () => {
     return (
         <MasterCont>
-        <Container>
+        <Container id="cars">
             <Carousel  pause='false'>
                 <Carousel.Item interval={3200}>
                     <img
