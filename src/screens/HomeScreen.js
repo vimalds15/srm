@@ -8,6 +8,8 @@ import Research from '../components/Research'
 import Chat from '../components/Chat'
 import CampusLife from '../components/CampusLife'
 import Footer from '../components/Footer'
+import About from '../components/About'
+import Support from '../components/Support'
 
 const HomeScreen = () => {
 
@@ -21,6 +23,8 @@ const HomeScreen = () => {
             <Research />
             <CampusLife />
             <Chat />
+            <About />
+            <Support />
             <Footer />
      </div>
      

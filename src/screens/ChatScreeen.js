@@ -8,6 +8,8 @@ import '../css/chat.css'
 import google from '../images/chat/google.png'
 import load from '../images/load.png'
 
+import { LinkContainer } from 'react-router-bootstrap'
+
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
@@ -47,27 +49,37 @@ function SignIn() {
     auth.signInWithPopup(provider);
   }
     
-    const signInAnonmously = () => {
-        const provider = new firebase.auth.signInAnonmously();
-        auth.signInAnonymously(provider);
-  }
+  //   const signInAnonmously = () => {
+  //       const provider = new firebase.auth.signInAnonmously();
+  //       auth.signInAnonymously(provider);
+  // }
     
     return (
         <div className='lgpage-wrapper'>
             <div className='imag-cont'>
-                <img className='chat-logo' src={load} />
+                <img className='chat-logo' alt='logo' src={load} />
             </div>
             <div className='title'>
                 <p>Connect With Srmites</p>
             </div>
       <div className="sign-in">
           
-      <button className="signin-btn" onClick={signInWithGoogle}>
+      <div className="signin-btn" onClick={signInWithGoogle}>
         <img className='gle-btn'  src={google} alt='Google Icon' />
-        <span className="">Sign In With Google</span>
-      </button>
+            <span className='signin-p'>Sign In With Google</span>
+      </div>
         </div>
+
+      <LinkContainer to='/' >
+      <div className="sign-in">    
+      <div className="signin-btn" >
+        <img className='gle-btn'  src={load} alt='Google Icon' />
+            <span className='signin-p'>Back to Website</span>
+      </div>
+          </div>
+          </LinkContainer>
         </div>
+        
   )
 }
 
@@ -131,7 +143,8 @@ function ChatRoom() {
 }
 
 function ChatMessage(props) {
-  const { user, body, uid, photoURL, createdAt } = props.message;
+  //createdAt inside{}
+  const { user, body, photoURL} = props.message;
 
     return (
         <div className=''>

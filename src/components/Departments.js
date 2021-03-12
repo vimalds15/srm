@@ -87,6 +87,7 @@ const Wrapper = styled.div`
     transition:all .5s ;
     align-items:center;
     background:#232427;
+    
    
     @media(max-width:1600px){
         min-height:100vh;
@@ -150,6 +151,8 @@ const Wrapper = styled.div`
         p{
             padding:2px;
             color:#968f8f;
+            font-weight:lighter;
+            font-family:Raleway, sans-serif;
             
         }
 

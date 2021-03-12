@@ -22,7 +22,7 @@ const Admissions = () => {
              <Row sm={true} md={true} lg={true}>
                 <Col lg={true}>
                     <AdmissionCont>
-                        <Title data-aos='fade-up' >Admissions <i class="fa fa-graduation-cap" aria-hidden="true"></i></Title>
+                        <Title data-aos='fade-up' > <h1> Admissions<i class="fa fa-graduation-cap" aria-hidden="true"></i> </h1></Title>
                         <Wrapper>
                             <Cont>
                                 <CardCont data-aos='fade-right'  onClick={()=>setIndianShow(true)}>
@@ -211,7 +211,9 @@ const Admissions = () => {
 export default Admissions
 
 const Container = styled.div`
-   background:#fafafa;
+//    background:#fafafa;
+ background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+
    overflow: hidden;
    
 `
@@ -240,6 +242,7 @@ const Title = styled.p`
     margin-top:10px;
     padding:2%;
     text-transform:uppercase;
+    color:black;
 `
 
 const CardCont = styled.div`

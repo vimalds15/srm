@@ -18,7 +18,7 @@ const Research = () => {
 
     return (
         <div id="resc">
-            <Title><h1 data-aos='fade-bottom'>Research <i className="fas fa-cogs"></i></h1></Title>
+            <Title><h1 data-aos='fade-bottom'>Research <i className=" anim fas fa-cog"></i></h1></Title>
             <Container>
             <Wrapper>
             <Card >
@@ -72,11 +72,7 @@ const Container = styled.div`
     align-items:center;
     justify-content:center;
     min-height:70vh;
-<<<<<<< HEAD
-    background:#111;
-=======
-    background:#fc3d3d;
->>>>>>> f5e9d1f2a8ee8c3ad936c2925b5b492cb48e977b
+    background:#ff4f4f;
     overflow:hidden;
     
 `
@@ -84,12 +80,13 @@ const Container = styled.div`
 const Wrapper = styled.div`
     position:relative;
     width:1050px;
+    padding-bottom:80px;
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
     align-items:center;
     justify-content:center;
-    padding-bottom:60px;
+    
    
     a{
         text-decoration:none;
@@ -97,7 +94,7 @@ const Wrapper = styled.div`
    
 
     @media(min-width:1100px){
-        padding-top:50px;
+        
         padding-bottom:0px;
         flex-direction:row
     }
@@ -168,7 +165,7 @@ const Card = styled.div`
         bottom: 0;
         height:300px;
         width:100%;
-        background: linear-gradient(transparent, transparent, rgba(251,61,61,0.3));
+        background: linear-gradient(transparent, transparent, rgba(0,0,0,0.3));
         transform-origin:bottom;
         transform: skewX(45deg);
         transition:0.5s;
@@ -224,7 +221,8 @@ const Card = styled.div`
 
 const Title = styled.div`
     text-align:center;
-    background:#fafafa;
+    background:#ff4f4f;
+    margin-bottom:-20px;
     h1{
     font-weight:bold;
     padding-top:20px;

@@ -5,10 +5,11 @@ import logo from '../images/logo.png'
 
 const Footer = () => {
     return (
+        <div>
         <div className='containe'>
 
-            <div className='f-1'>
-                <img src={logo} />
+            <div className='f-1 sec'>
+                <img src={logo} alt='srm logo' />
                 <ul>
                     <li><a href="https://www.srmist.edu.in/privacy-policy">Privacy & Policy</a></li>
                     <li><a href="https://www.srmist.edu.in/terms-and-conditions">Terms & Conditions</a></li>
@@ -17,7 +18,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div className='f-2'>
+            <div className='f-2 sec'>
                 <h2>GET CONNECTED</h2>
                 <ul>
                     <li><a href="https://www.srmist.edu.in/aboutus/strategic-alliance">International Alliances</a></li>
@@ -29,7 +30,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div className='f-3'>
+            <div className='f-3 sec'>
                 <h2>INSIGHTS</h2>
                 <ul>
                     <li><a href="https://www.srmiic.com/">Innovation & Incubation Center</a></li>
@@ -42,7 +43,7 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div className='f-4'>
+            <div className='f-4 sec'>
                 <h2>CAMPUSES</h2>
                 <ul>
                     <li><a href="https://www.srmist.edu.in/">Chennai Main Campus - Kattankulathur</a></li>
@@ -55,8 +56,8 @@ const Footer = () => {
                 </ul>
             </div>
 
-
-
+            </div>
+            <div className='cpyright'>&copy; 2021. All Rights Reserved. Made by Anto Vimalan & Immanuel Raj</div>
         </div>
     )
 }

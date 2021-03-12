@@ -2,13 +2,22 @@
     background-color: black;
     text-align: center;
     padding:20px;
+    
   }
+
+  .clife-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
   .copy-box 
   {
     position: relative;
-    display: inline-block;
     margin: 15px 5%;
-    width: 400px;
+    max-width: 400px; 
     background-color: #111111;
     color: #333333;
     font-family: sans-serif;
@@ -25,6 +34,11 @@
     left: 22px;
     border-radius: 50%;
     overflow: hidden;
+  }
+
+  .copy-box img{
+    height: 100%;
+    width: 100%;
   }
 
 
@@ -90,3 +104,16 @@
       margin-top:5%;
       color:rgb(200, 198, 198);
   }
+
+  @media(max-width: 500px){
+  .copy-box 
+  {
+    position: relative;
+    margin: 15px 5%;
+    max-width: 300px; 
+    background-color: #111111;
+    color: #333333;
+    font-family: sans-serif;
+    padding: 20px;
+  }
+}

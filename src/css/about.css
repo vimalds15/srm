@@ -1,0 +1,96 @@
+
+.contaner {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+    min-height: 50vh;
+    
+  }
+
+  .abt-total{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow:hidden;
+  }
+
+  .abt-tit{
+      margin-top:0px;
+      padding-top:50px;
+      margin-bottom: -80px;
+      font-weight: bold;
+
+      
+  }
+
+  .abt-tit h1{
+      color:rgb(88, 88, 88); 
+  }
+  
+  .carosel {
+    position: absolute;
+    margin-top:100px;
+    width: 90%;
+    height: 90%;
+    transform-style: preserve-3d; 
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carosel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    /* box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5); */
+    display: flex;
+  }
+  
+
+  
+  .carosel__face:nth-child(1) {
+    background-image: url("https://www.srmist.edu.in/sites/all/themes/srmuniversity/home_assets/images/about-us-slide2.jpg");
+    transform: rotateY(  0deg) translateZ(430px); }
+  .carosel__face:nth-child(2) { 
+    background-image: url("https://www.srmist.edu.in/sites/all/themes/srmuniversity/home_assets/images/about-us-slide3.jpg");
+      transform: rotateY( 40deg) translateZ(430px); }
+  .carosel__face:nth-child(3) {
+    background-image: url("https://www.srmist.edu.in/sites/all/themes/srmuniversity/home_assets/images/about-us-slide1.jpg");
+    transform: rotateY( 80deg) translateZ(430px); }
+  .carosel__face:nth-child(4) {
+    background-image: url("https://www.srmist.edu.in/sites/all/themes/srmuniversity/home_assets/images/accreditation.jpg");
+    transform: rotateY(120deg) translateZ(430px); }
+  .carosel__face:nth-child(5) { 
+    background-image: url("https://www.srmist.edu.in/sites/all/themes/srmuniversity/home_assets/images/ariia-2020-srmist.jpg");
+   transform: rotateY(160deg) translateZ(430px); }
+  .carosel__face:nth-child(6) { 
+    background-image: url("https://www.srmist.edu.in/sites/all/themes/srmuniversity/home_assets/images/icon-best-2021.jpg");
+   transform: rotateY(200deg) translateZ(430px); }
+  .carosel__face:nth-child(7) { 
+    background-image: url("https://www.srmist.edu.in/sites/default/files/styles/banner/public/banner/about_srm2_8.jpg?itok=Ag-V8suW");
+   transform: rotateY(240deg) translateZ(430px); }
+  .carosel__face:nth-child(8) {
+    background-image: url("https://www.srmist.edu.in/sites/default/files/styles/banner/public/banner/about_srm1.jpg?itok=AF3OQ7gj");
+    transform: rotateY(280deg) translateZ(430px); }
+  .carosel__face:nth-child(9) {
+    background-image: url("https://www.srmist.edu.in/sites/default/files/styles/banner/public/banner/about_srm3.jpg?itok=o3Bj1EJx");
+    transform: rotateY(320deg) translateZ(430px); }
+  
+  
+  
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+
+  .sp{
+      margin:auto;
+      font-size: 1.5rem;
+  }
+  

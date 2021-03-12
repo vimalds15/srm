@@ -8,7 +8,7 @@ const Chat = () => {
             <LinkContainer to='/chat'>
                 <IconCont>
                     <i className='fas fa-comment-alt'></i>
-                    <p>Live Connect</p>
+                    <p>SRM Connect</p>
                 </IconCont>
             </LinkContainer>
             
@@ -23,25 +23,27 @@ const IconCont = styled.div`
     align-items:center;
     justify-content:center;
     position:fixed;
-    bottom:80px;
+    bottom:83px;
     right:15px;
     height:50px;
     width:150px;
-    border-radius:20px;
-    background:red;
+    border-radius:11px;
+    border:2px solid rgb(255,225,0);
+    background:black;
     color:white;
     cursor:pointer;
     z-index:100;
     
 
     p{
-        
+        color:rgb(255,225,0);
+        font-weight:bold;
         margin-left:5px;
        margin-top:14px;
     }
 
-    :hover{
-    background:rgb(233, 0, 0);;
+    i{
+        color:rgb(255,225,0);
 
     }
 `

@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React, { useEffect } from 'react'
 import img1 from '../images/events/img1.jpg'
 import img2 from '../images/events/img2.jpg'
 import img3 from '../images/events/img3.jpg'
@@ -65,7 +65,8 @@ display:flex;
 justify-content:center;
 align-items:center
 padding-top:50px;
-background:white;
+background: linear-gradient(180deg, #fff,#fff,#fff,#fff,#fff,#fff, rgba(255,225,0,0.9));
+
 
 @media(min-width:990px){
     height:100vh;
@@ -82,7 +83,8 @@ const Title = styled.div`
     align-items:center;
     justify-content:center;
     height:8vh;
-    
+    // background: linear-gradient(0deg, #fafafa,#fafafa,#fafafa, rgba(255,225,0,0.9));
+
     
     
     
@@ -91,12 +93,7 @@ const Title = styled.div`
         margin-bottom:50px;
         font-size:36px;
         font-weight:bold;
-       
-    }
-
-    @media(min-width:990px){
-        border-top:2px solid #fafafa;
-
+        color:rgb(102, 102, 102);
     }
 `
 
@@ -138,6 +135,7 @@ const Card = styled.div`
             opacity:1;
             margin-top:-60px;
             transition-delay:0.3s;
+
         }
     }
 
@@ -150,6 +148,7 @@ const Card = styled.div`
         opacity:0;
         transition: 0.3s ease-in-out;
 
+
         p{
             color:#111;
         }
@@ -157,6 +156,10 @@ const Card = styled.div`
         h2{
             color:#ff7300;
             font-size:24px;
+        }
+
+        a{
+            text-decoration:none;
         }
     }
 
@@ -167,6 +170,8 @@ const Card = styled.div`
         top:-60px;
         left:20px;
         box-shadow: 0 5px 20px rgba(0,0,0,,0.5);
+   
+
 
         .photo{
             height:90%;
