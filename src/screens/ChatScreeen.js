@@ -64,26 +64,29 @@ function SignIn() {
             <div className='title'>
                 <p>Connect With Srmites</p>
             </div>
-      <div className="sign-in">
+      <div className="anon-wrap">
           
+        
       <div className="signin-btn" onClick={signInWithGoogle}>
         <img className='gle-btn'  src={google} alt='Google Icon' />
             <span className='signin-p'>Sign In With Google</span>
       </div>
         </div>
 
+        <div className='anon-wrap'>
         <div className="signin-btn" onClick={signInWithAnonmously}>
-        <img className='gle-btn'  src={google} alt='Google Icon' />
-            <span className='signin-p'>Sign In With Google</span>
-      </div>
+        <img className='gle-btn'  src='https://avatars.githubusercontent.com/u/74135002?s=460&v=4' alt='Google Icon' />
+            <span className='signin-p'>Sign in as Guest</span>
+          </div>
+        </div>
 
-      <LinkContainer to='/' >
-      <div className="sign-in">    
+        <LinkContainer to='/' >
+          <div className='anon-wrap'>
       <div className="signin-btn" >
         <img className='gle-btn'  src={load} alt='Google Icon' />
             <span className='signin-p'>Back to Website</span>
-      </div>
-          </div>
+            </div>
+            </div>
           </LinkContainer>
         </div >
         
