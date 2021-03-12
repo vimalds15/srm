@@ -46,6 +46,10 @@ const MasterCont = styled.div`
     background:rgb(212, 210, 210);
     padding:50px;
    
+
+    @media(max-width:500px){
+        padding:25px;
+    }
 `
 
 

@@ -40,7 +40,7 @@ const Research = () => {
                     <div className="content">
                     <a target='_' href="https://www.srmist.edu.in/erc/index.html">        
                     <h2 data-aos='fade-bottom'>Earthquake Research Cell</h2>
-                    <p data-aos='fade-bottom'>Advanced Research on occurrence and predicvtion of Earthquakes
+                    <p data-aos='fade-bottom'>Advanced Research on occurrence and prediction of Earthquakes
                     </p>
                     </a>     
                 </div>

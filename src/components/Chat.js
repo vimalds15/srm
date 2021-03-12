@@ -23,7 +23,7 @@ const IconCont = styled.div`
     align-items:center;
     justify-content:center;
     position:fixed;
-    bottom:83px;
+    bottom:30px;
     right:15px;
     height:50px;
     width:150px;
@@ -33,7 +33,9 @@ const IconCont = styled.div`
     color:white;
     cursor:pointer;
     z-index:100;
-    
+    box-shadow: 0px 4px 5px 0px rgba(251,225,0,0.75);
+-webkit-box-shadow: 0px 4px 5px 0px rgba(251,225,0,0.75);
+-moz-box-shadow: 0px 4px 5px 0px rgba(251,225,0,0.75);
 
     p{
         color:rgb(255,225,0);
@@ -45,5 +47,17 @@ const IconCont = styled.div`
     i{
         color:rgb(255,225,0);
 
+    }
+
+    :hover{
+        background:rgb(255,225,0);
+        transition:.5s;
+
+        p{
+            color:black;
+        }
+        i{
+            color:black;
+        }
     }
 `

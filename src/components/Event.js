@@ -168,8 +168,17 @@ const Card = styled.div`
         width:260px;
         height:260px;
         top:-60px;
-        left:20px;
+        left:24px;
         box-shadow: 0 5px 20px rgba(0,0,0,,0.5);
+
+        :hover{
+            position:relative;
+            width:260px;
+            height:260px;
+            top:-60px;
+            left:24px;
+            box-shadow: 0 5px 20px rgba(0,0,0,,0.5);
+        }
    
 
 

@@ -113,7 +113,7 @@ const Admissions = () => {
                         <p>
                         You need to write an entrance exam called SRMJEEE to be eligable to move forward to the next step
                         the exam should be undertake by students who is willing to learn <p></p>
-                        <p>Engeineering</p>
+                        <p>Engineering</p>
                         <p>Medical & Health Science</p>
                         <p>Management</p>
                         <p>Science & Humanities</p>
@@ -211,9 +211,8 @@ const Admissions = () => {
 export default Admissions
 
 const Container = styled.div`
-//    background:#fafafa;
- background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-
+   background:rgb(42, 42, 42);
+   
    overflow: hidden;
    
 `
@@ -221,6 +220,10 @@ const Container = styled.div`
 
 const AdmissionCont = styled.div`
 padding-bottom:40px;
+
+h1{
+    color: rgb(255,225,0);
+}
    
 `
 const Wrapper = styled.div`
@@ -235,14 +238,14 @@ const Wrapper = styled.div`
     }
 `
 
-const Title = styled.p`
+const Title = styled.h1`
     font-size:34px;
     font-weight:bold;
     text-align:center;
     margin-top:10px;
     padding:2%;
-    text-transform:uppercase;
-    color:black;
+    
+   
 `
 
 const CardCont = styled.div`
