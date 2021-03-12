@@ -32,6 +32,7 @@ const firestore = firebase.firestore();
 function ChatScreen() {
   const [user] = useAuthState(auth);
 
+
   return (
     <div className="App border-bg h-screen">
       <SignOut />
@@ -48,11 +49,12 @@ function SignIn() {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
   }
-    
-  //   const signInAnonmously = () => {
-  //       const provider = new firebase.auth.signInAnonmously();
-  //       auth.signInAnonymously(provider);
-  // }
+
+
+  const signInWithAnonmously = () => {
+        firebase.auth().signInAnonymously();
+        
+  }
     
     return (
         <div className='lgpage-wrapper'>
@@ -70,6 +72,11 @@ function SignIn() {
       </div>
         </div>
 
+        <div className="signin-btn" onClick={signInWithAnonmously}>
+        <img className='gle-btn'  src={google} alt='Google Icon' />
+            <span className='signin-p'>Sign In With Google</span>
+      </div>
+
       <LinkContainer to='/' >
       <div className="sign-in">    
       <div className="signin-btn" >
@@ -78,7 +85,8 @@ function SignIn() {
       </div>
           </div>
           </LinkContainer>
-        </div>
+        </div >
+        
         
   )
 }
@@ -150,10 +158,13 @@ function ChatMessage(props) {
         <div className=''>
         <div className="msg-wrapper">
             <div className='msg-img'>
-                <img className src={photoURL || 'https://th.bing.com/th/id/OIP.GjkOZqurknuUYdxNQD11RgAAAA?pid=ImgDet&rs=1'} alt="{user}'s pfp" />
+                <img className src={photoURL || 'https://avatars.githubusercontent.com/u/74135002?s=460&v=4'} alt="{user}'s pfp" />
             </div>
-            <div className='msg-cont'>
-          <h6 className="uname">{user}</h6>
+          <div className='msg-cont'>
+            {user ?
+              <h6 className="uname">{user}</h6>
+              : <h6>Anonymous User</h6>
+            }
           <p className='utext'>{body}</p>
             </div>
             </div>
