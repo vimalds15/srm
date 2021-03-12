@@ -23,7 +23,7 @@ const IconCont = styled.div`
     align-items:center;
     justify-content:center;
     position:fixed;
-    bottom:30px;
+    bottom:80px;
     right:15px;
     height:50px;
     width:150px;

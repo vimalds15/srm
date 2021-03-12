@@ -63,6 +63,7 @@ const Footer = () => {
                     <li><a href="https://twitter.com/SRM_Univ"><i class="fab fa-twitter"></i>Twitter</a></li>
                     <li><a href="https://www.linkedin.com/company/srm-ist-chennai"><i class="fab fa-linkedin"></i>Linkedin</a></li>
                     <li><a href="https://www.youtube.com/user/SRMeducation?ob=0"><i class="fab fa-youtube"></i>Youtube</a></li>
+                    <li><a href="https://t.me/srmoff"><i class="fab fa-telegram"></i>Telegram</a></li>
                     <li><a href="https://www.facebook.com/SRMUniversityOfficial"><i class="fab fa-facebook"></i>Facebook</a></li></h3>
                 </ul>
             </div>
